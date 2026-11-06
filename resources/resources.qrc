@@ -1,0 +1,6 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+	<qresource prefix="/icons">
+		<file alias="traffic_engine.png">../icons/traffic_engine.png</file>
+	</qresource>
+</RCC>

@@ -1,0 +1,3 @@
+// Windows program icon (icon of traffic_engine.exe).
+// The ICON resource with the lowest ID is the icon in Explorer and the taskbar.
+IDI_ICON1 ICON "../icons/traffic_engine.ico"

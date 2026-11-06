@@ -1,0 +1,82 @@
+Giriş;
+Bir trafik motoru geliştirmek istiyorum. 
+Bu motor temelde 2 boyutlu olacak, araçların, yolların, trafik ışıklarınını, kavşakların, hemzemin geçitlerin, bariyerlerin, dubaların, yol kesmelerin, trafik işaretlerinin temel dinamiklerini barındıracak. 
+
+Altyapı;
+Trafik motoru C++ dili ile geliştirilmeli, Qt5 Framework kullanılmalı. 
+Proje yapısı C:\Users\tcelik\Desktop\ASAN\sot-v4.1\asanframework\asan_map klasöründeki şekliyle olmalıdır. 
+Projeye ait konfigürasyonlar xml dosyasında saklanmalı.
+%APPDATA% klasöründe konfigürasyonlar tutulmalı.
+OpenGL, Qt, BOOST, Xerses, 7zip ve diğer harici framework ve uygulamalar için önceli yerel bilgisayar taranmalı, yerelde yoksa internet üzerinden getirilmeli ve cots klasöründe toplanmalı.
+
+Deploy ve Release;
+Her derleme işleminde bin klasörü altına ilgili dosyalar sembolik linklenmeli.
+windeployqt çalıştırılmalı ve bin klasörünün altı doldurulmalı.
+Debug, release ve deploy release için ayrı ayrı bat dosyaları olmalı, komut satırı yazmadan çıktı alabilmeliyim.
+git ile çalışılmalı http://192.168.1.15:3000/tcelik/traffic-engine.git
+
+
+Grafikler;
+Logolar internetten alınabilir fakat yuvarlak köşelere sahip olmalı. Renkler pastel ve birbiri ile uyumlu olmalı.
+Uygulama ticari olarak kullanılmayacağı için alınan logolar telif hakkına sahip olabilir. Bu bir problem teşkil etmez.
+
+Geliştirme ve Yanıtlar;
+Bana verdiğin yanıtlar ASD-STE100_ISSUE9 standardına uygun olarak yapılmalı.
+Uygulama içindeki bilgilendirme yazıları ve diğer kurulan cümleler ASD-STE100_ISSUE9 standardına uygun olarak yapılmalı.
+Uygulamada Debug mod kesinlikle olmalı, uygulama ansızın çöktüğünde kolayca debug edebilmeliyiz.
+Uygulama detaylı log tutmalı, fakat bu log işlemi performansa etki etmemeli, performans kaybı oluşturduğu zamanlarda devre dışı bırakılabilmeli.
+
+Kullanım ve Dinamikler;
+UI tasarımında boş bir dünya olmalı, yer çim yada farklı bir materyal olabilir, Kullanıcı seçebilmeli, varsayılanda çim olmalı. 
+Kullanıcı sol yada üst menüdeki logolar ile editör modundayken yol ekleyebilmeli, düzenleyebilmeli, silebilmeli yada yola ve/veya seçtiği nesneye ait özellikleri set/edit edebilmeli.
+Editör modundayken akış durmalı.
+Araçların dinamikleri olmalı. Araçlar çeşitli olmalı, otobüs, yaya, motor ve sedan araba şeklinde.
+Akış gerçek zamanlı olmalı. Fakat kullanıcı bunu hızlandırıp yavaşlatabilmeli.
+Kaza simülasyonu olmayacak.
+Araçlar gerçeğe en yakın biçimde ivme ve hıza sahip olacak.
+Altyapıdı OpenGL kullanabilirsin.
+Detaylar açılırsa ekranın sağ üstünde opengl ekranına gömülü olarak çizilen FPS göstergesi, ve diğer developer ihtiyaçları gösterilmeli.
+Kullanıcı grafikler oluşturabilmeli, özellikle saat ve araç yoğunluğu, araç hızı, araçların dur kalk adedi, süresi araçların bir ışıkta yada kavaşkta ne kadar süre geçirdikler, kilitli trafikte aldıkları yol ve harcadıkları zaman, harcadıkları ortalama yakıt miktrı, üretilen karbon salınımı gibi grafikleri oluşturabilmeli.
+Oluşturulan grafikleri çıktı kaydedebilmeli.
+Kullanıcı trafik ışıklarının süresini ve algoritma olarak yanma sürelerini sıralayıp zamanlayabilmeli.
+Kullanıcı seçtiği kavşak, ışık, araç, yol ve diğer nesnelerin detaylarını görebileceği OpenGL içinde popup ekrandan takip edebilmeli.
+Uygulama içinde oluşturulan bütün nesneler bir dosyaya kaydedilmeli. Dosya uzantısı *.te olmalı.
+Kullanıcı birden fazla *.te dosyasını açabilmeli, her açılan workspace yeni bir tab halinde görünmeli.
+Trafik işaretleri listesi olmalı ve bu liste Türkiye Cumhuriteindeki trafik levhalarının hepsini içermeli.
+İki boyutlu üstten görünüm dünya pixel art değil, smooth bir grafiğe sahip olmalı.
+Kullanıcı dünya içinde zoom in, zoom out, pan gibi işlemleri mouse yardımı ile yapabilmeli.
+F tuşları kısayolları ile yol, levha ve diğer nesneleri haritaya eklemek için seçebilmeli.
+Her aracın hız bilgisi, anlık yakıt tüketimi, araç içindeki yolcu sayısı, rotası üzerine tıklandğında görünebilmeli.
+Trafik ışıklarında aynı şekilde tıklandığında bekleyen sayısı, kalan süre gibi bilgiler görünmeli. Geri sayım dünya üzerinde de görülebilmeli.
+Kullanıcı kavşak ve yolların bilgilerini openstreet map üzerinden otomatik olarak generate edebilmeli ve program dünyasına aktarabilmeli.
+Opensteet Map üzerinden gelen kavşak ve yollar editlenebilmeli.
+Program genelinde yollar, kavşaklar, tabelalar, ışıklar ve diğer nesnelerin özellikleri çalışma zamanında değiştirilebilmeli. Aynı şekilde değişen özellikler çalışma zamanında program için nesneler tarafından algılanabilmeli.
+Yollar editlerirken detaylı olarka yaya yolu, bisiklet yolu, hendekler, dubalar, sollamalı ve sollamasız şeritler, tek yönler, otobüs durakları gibi özelliklr eklenebilmeli.
+Tüm araçlar trafik kurallarına istisnasız uymalı.
+Yeteri kadar zoom out yapıldığında openstreet map üzerinde trafik yoğunluğunu gösteren harita olmalı, trafik yoğunluğu bilgisi bizim programımızdan beslenmeli.
+
+API ve Üçüncü Taraf;
+Yazılım bilgileri json formatında çıktı olarak verebilmeli.
+Bu kısım ileriki aşamalarda geliştirilecektir.
+Trafik ışıkları bilgisi dışardan beslenebiilir olmalı fakat API bağlantıları ve diğer şemalar henüz belli değil.
+
+
+
+İkinci Promt;
+
+Hata ve problemeler;
+1. Kavşaklarda araçlar bazen sadece bekliyor ve hiç bir ilerleme yapmıyor. 
+2. Nadiren araçlar birbirinin içinden geçebiliyor. Bu bir problem. Araçlar kesinlikle birbirinin üzerinden yada içinden geçememli.
+3. Hata tespiti ve tam onarım için simülasyonu çalıştır ve bahsettiğim hataları yakalayana kadar izle, izleme süresi uzun olabilir bu bir problem değil. Bu şekilde hataları sende görebilir ve giderebilirsin.
+
+Ek özellikler;
+1. Bir araç beklerken neden beklediğini belirten bir text olmalı. Bu text başka bir araca bağlı ise linked text ile tıklandığında o araca yada trafik lambasına yada ilgili nesneye gidilmeli.
+2. Açılışta bir splash screen olmalı. Asan Map projesinde kullanmıştık.
+3. Bu programın amacı gerçek dünyadaki yollar ile simüle ortamda trafik problemlerini gidermek olduğu için kullanıcının/analizcinin sıkışan trafiği çözmesi için bu bölgeleri rahatça ayırt edebilmesi gerekiyor. Bu nedenle bu amaca uygun şekilde gösterim yapan, bilgilendirme yapan bir özellik ekle. 
+
+
+Git push;
+1. Yukarıda bahsedilen hatalar ve özellikler için yeni bir gir branchı oluştur ve bu branch dev branchı olsun. Şimdiye kadar yaptığımız geliştirmeler master'da kalacak. Yeni eklenen özelliklier ve giderilen hatalar dev'de olacak. Ben onay verdiğimde kendim master dalına merge edeceğim.
+
+
+Bu işlem bitiğinde bu projeyi github üzerinde yayınlamak ve reklam yapmka için bir sayfa oluştur. Github'un ücretsiz olarak sunduğu io uzantılı web sitesini kullanacağız. Bu reklam sayfasında Traffic Engine projesinin özelliklerini gösteren, tanıtan ve anladan görseller ve gif'ler olmalı. Tanıtımda kullanılan text'ler için her zaman ASD-STE100 standardına uygun olarak yazacağız. 

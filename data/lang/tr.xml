@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Turkish dictionary of the user interface (Xerces-C, src/i18n.cpp).
+
+  Each entry: en = the English text in the code (exactly the same text,
+  with the same %1 ... %99 places), text = the Turkish text.
+  Escape in the attributes: &amp; &lt; &gt; &quot; and &#10; (new line).
+  "&" in a menu text marks the menu key (Alt + key).
+  A missing entry shows the English text (debug log: "No translation").
+  Find the missing texts: build\i18n_strings.ps1 -Missing
+-->
+<language code="tr" name="Türkçe">
+
+  <!-- ===== Qt (standard buttons, context menus, scroll bars) ===== -->
+  <entry en="OK" text="Tamam"/>
+  <entry en="&amp;OK" text="&amp;Tamam"/>
+  <entry en="Cancel" text="İptal"/>
+  <entry en="&amp;Cancel" text="&amp;İptal"/>
+  <entry en="&amp;Yes" text="&amp;Evet"/>
+  <entry en="&amp;No" text="&amp;Hayır"/>
+  <entry en="Yes" text="Evet"/>
+  <entry en="No" text="Hayır"/>
+  <entry en="Yes to &amp;All" text="&amp;Tümüne evet"/>
+  <entry en="N&amp;o to All" text="Tümüne h&amp;ayır"/>
+  <entry en="Save" text="Kaydet"/>
+  <entry en="&amp;Save" text="&amp;Kaydet"/>
+  <entry en="Save All" text="Tümünü kaydet"/>
+  <entry en="Discard" text="Kaydetme"/>
+  <entry en="Don't Save" text="Kaydetme"/>
+  <entry en="Close without Saving" text="Kaydetmeden kapat"/>
+  <entry en="Close" text="Kapat"/>
+  <entry en="&amp;Close" text="&amp;Kapat"/>
+  <entry en="Apply" text="Uygula"/>
+  <entry en="Reset" text="Sıfırla"/>
+  <entry en="Help" text="Yardım"/>
+  <entry en="Open" text="Aç"/>
+  <entry en="Abort" text="Durdur"/>
+  <entry en="Retry" text="Yeniden dene"/>
+  <entry en="Ignore" text="Yoksay"/>
+  <entry en="Restore Defaults" text="Varsayılanları geri yükle"/>
+  <entry en="&amp;Undo" text="&amp;Geri al"/>
+  <entry en="&amp;Redo" text="&amp;Yinele"/>
+  <entry en="Cu&amp;t" text="&amp;Kes"/>
+  <entry en="&amp;Copy" text="K&amp;opyala"/>
+  <entry en="&amp;Paste" text="Ya&amp;pıştır"/>
+  <entry en="Delete" text="Sil"/>
+  <entry en="&amp;Delete" text="&amp;Sil"/>
+  <entry en="Select All" text="Tümünü seç"/>
+  <entry en="&amp;Select All" text="&amp;Tümünü seç"/>
+  <entry en="&amp;Step up" text="&amp;Arttır"/>
+  <entry en="Step &amp;down" text="A&amp;zalt"/>
+  <entry en="Copy &amp;Link Location" text="&amp;Bağlantı adresini kopyala"/>
+  <entry en="Close Tab" text="Sekmeyi kapat"/>
+  <entry en="Scroll here" text="Buraya kaydır"/>
+  <entry en="Left edge" text="Sol kenar"/>
+  <entry en="Top" text="Üst"/>
+  <entry en="Right edge" text="Sağ kenar"/>
+  <entry en="Bottom" text="Alt"/>
+  <entry en="Page left" text="Sayfa sola"/>
+  <entry en="Page up" text="Sayfa yukarı"/>
+  <entry en="Page right" text="Sayfa sağa"/>
+  <entry en="Page down" text="Sayfa aşağı"/>
+  <entry en="Scroll left" text="Sola kaydır"/>
+  <entry en="Scroll up" text="Yukarı kaydır"/>
+  <entry en="Scroll right" text="Sağa kaydır"/>
+  <entry en="Scroll down" text="Aşağı kaydır"/>
+
+  <!-- ===== Units and suffixes ===== -->
+  <entry en=" s" text=" sn"/>
+  <entry en=" days" text=" gün"/>
+  <entry en=" km/h" text=" km/sa"/>
+  <entry en="s" text="sn"/>
+  <entry en="h" text="sa"/>
+  <entry en="deg" text="derece"/>
+  <entry en="km/h" text="km/sa"/>
+  <entry en="m" text="m"/>
+  <entry en="km" text="km"/>
+  <entry en="kg" text="kg"/>
+  <entry en="L/100 km" text="L/100 km"/>
+  <entry en="L/h" text="L/sa"/>
+  <entry en="kg/h" text="kg/sa"/>
+  <entry en="veh" text="araç"/>
+  <entry en="ped" text="yaya"/>
+  <entry en="veh/km" text="araç/km"/>
+  <entry en="veh/h" text="araç/sa"/>
+  <entry en="stops/veh" text="duruş/araç"/>
+  <entry en="s/veh" text="sn/araç"/>
+  <entry en="m/veh" text="m/araç"/>
+  <entry en="%1 km/h" text="%1 km/sa"/>
+  <entry en="30 km/h" text="30 km/sa"/>
+  <entry en="50 km/h" text="50 km/sa"/>
+  <entry en="70 km/h" text="70 km/sa"/>
+  <entry en="90 km/h" text="90 km/sa"/>
+  <entry en="110 km/h" text="110 km/sa"/>
+  <entry en=" %" text=" %"/>
+  <entry en=" x" text=" x"/>
+  <entry en=" m" text=" m"/>
+  <entry en=" MB" text=" MB"/>
+  <entry en=" FPS" text=" FPS"/>
+  <entry en="API" text="API"/>
+  <entry en="25%" text="%25"/>
+  <entry en="50%" text="%50"/>
+  <entry en="100%" text="%100"/>
+  <entry en="150%" text="%150"/>
+  <entry en="200%" text="%200"/>
+  <entry en="yes" text="evet"/>
+  <entry en="no" text="hayır"/>
+  <entry en="all" text="tümü"/>
+
+  <!-- ===== Main window: menus and actions ===== -->
+  <entry en="&amp;File" text="&amp;Dosya"/>
+  <entry en="&amp;Edit" text="Dü&amp;zen"/>
+  <entry en="&amp;View" text="&amp;Görünüm"/>
+  <entry en="&amp;Simulation" text="&amp;Simülasyon"/>
+  <entry en="&amp;Tools" text="&amp;Araçlar"/>
+  <entry en="&amp;Help" text="&amp;Yardım"/>
+  <entry en="&amp;New workspace" text="&amp;Yeni çalışma alanı"/>
+  <entry en="Make a new empty workspace" text="Yeni ve boş bir çalışma alanı oluştur"/>
+  <entry en="New &amp;demo workspace" text="Yeni ö&amp;rnek çalışma alanı"/>
+  <entry en="Make a workspace with the demo city" text="Örnek şehir ile bir çalışma alanı oluştur"/>
+  <entry en="&amp;Open..." text="&amp;Aç..."/>
+  <entry en="Open workspace files (*.te)" text="Çalışma alanı dosyalarını aç (*.te)"/>
+  <entry en="Open &amp;recent" text="&amp;Son kullanılanlar"/>
+  <entry en="Save the workspace" text="Çalışma alanını kaydet"/>
+  <entry en="Save &amp;as..." text="&amp;Farklı kaydet..."/>
+  <entry en="Save the workspace with a new name" text="Çalışma alanını yeni bir adla kaydet"/>
+  <entry en="&amp;Close workspace" text="Çalışma alanını ka&amp;pat"/>
+  <entry en="Close the current workspace" text="Geçerli çalışma alanını kapat"/>
+  <entry en="Export the report (&amp;JSON)..." text="Raporu dışa aktar (&amp;JSON)..."/>
+  <entry en="Write the program and workspace data as JSON" text="Program ve çalışma alanı verilerini JSON olarak yaz"/>
+  <entry en="Export the &amp;view (PNG)..." text="&amp;Görünümü dışa aktar (PNG)..."/>
+  <entry en="Save the world view as an image" text="Dünya görünümünü resim olarak kaydet"/>
+  <entry en="&amp;Import from OpenStreetMap..." text="OpenStreetMap'ten &amp;içe aktar..."/>
+  <entry en="Make a workspace from the roads of a real area (OpenStreetMap)" text="Gerçek bir bölgenin yollarından çalışma alanı oluştur (OpenStreetMap)"/>
+  <entry en="E&amp;xit" text="Çıkı&amp;ş"/>
+  <entry en="Close the program" text="Programı kapat"/>
+  <entry en="&amp;Editor mode" text="&amp;Düzenleyici modu"/>
+  <entry en="Editor mode: the flow stops and you can edit the world" text="Düzenleyici modu: akış durur ve dünyayı düzenleyebilirsiniz"/>
+  <entry en="&amp;Run / pause" text="&amp;Çalıştır / duraklat"/>
+  <entry en="Run or pause the flow" text="Akışı çalıştır veya duraklat"/>
+  <entry en="&amp;Run" text="&amp;Çalıştır"/>
+  <entry en="&amp;Pause" text="&amp;Duraklat"/>
+  <entry en="One &amp;step" text="&amp;Bir adım"/>
+  <entry en="One simulation step (when paused)" text="Bir simülasyon adımı (duraklatıldığında)"/>
+  <entry en="Start &amp;again" text="&amp;Yeniden başlat"/>
+  <entry en="Start the simulation again (no vehicles, clock at the start)" text="Simülasyonu yeniden başlat (araç yok, saat başlangıçta)"/>
+  <entry en="&amp;Faster" text="Daha &amp;hızlı"/>
+  <entry en="Double the speed of the flow" text="Akış hızını iki katına çıkar"/>
+  <entry en="S&amp;lower" text="Daha y&amp;avaş"/>
+  <entry en="Half the speed of the flow" text="Akış hızını yarıya indir"/>
+  <entry en="&amp;Remove the selection" text="Seçimi &amp;kaldır"/>
+  <entry en="Remove the selected element (editor mode)" text="Seçili öğeyi kaldır (düzenleyici modu)"/>
+  <entry en="&amp;Developer details" text="&amp;Geliştirici ayrıntıları"/>
+  <entry en="Show FPS, timings and other developer data" text="FPS, süreler ve diğer geliştirici verilerini göster"/>
+  <entry en="Traffic light &amp;countdowns" text="Trafik ışığı geri &amp;sayımları"/>
+  <entry en="Show the remaining time of the traffic lights in the world" text="Dünyadaki trafik ışıklarının kalan süresini göster"/>
+  <entry en="Road &amp;names" text="&amp;Yol adları"/>
+  <entry en="Show the road names" text="Yol adlarını göster"/>
+  <entry en="&amp;Grid" text="&amp;Izgara"/>
+  <entry en="Show a grid (10 m and 100 m)" text="Izgara göster (10 m ve 100 m)"/>
+  <entry en="Traffic &amp;density map" text="&amp;Trafik yoğunluk haritası"/>
+  <entry en="Show the traffic density by colors when you zoom out" text="Uzaklaştırınca trafik yoğunluğunu renklerle göster"/>
+  <entry en="&amp;Map background" text="&amp;Harita arka planı"/>
+  <entry en="Show the OpenStreetMap map under a workspace with a geographic origin" text="Coğrafi başlangıç noktası olan bir çalışma alanının altında OpenStreetMap haritasını göster"/>
+  <entry en="&amp;Zoom to fit" text="&amp;Ekrana sığdır"/>
+  <entry en="Show the full world" text="Dünyanın tamamını göster"/>
+  <entry en="&amp;Follow the selected vehicle" text="Seçili aracı ta&amp;kip et"/>
+  <entry en="The view follows the selected vehicle or pedestrian" text="Görünüm seçili aracı veya yayayı takip eder"/>
+  <entry en="Ground &amp;material" text="&amp;Zemin malzemesi"/>
+  <entry en="&amp;Language" text="&amp;Dil"/>
+  <entry en="Language of the user interface" text="Kullanıcı arayüzünün dili"/>
+  <entry en="Traffic light &amp;program..." text="Trafik ışığı &amp;programı..."/>
+  <entry en="Edit the phases and the times of the selected traffic light" text="Seçili trafik ışığının fazlarını ve sürelerini düzenle"/>
+  <entry en="&amp;Settings..." text="&amp;Ayarlar..."/>
+  <entry en="Settings of the program" text="Programın ayarları"/>
+  <entry en="Traffic light program" text="Trafik ışığı programı"/>
+  <entry en="Select a traffic light first (click a signal head or the junction)." text="Önce bir trafik ışığı seçin (bir sinyal başlığına veya kavşağa tıklayın)."/>
+  <entry en="Traffic &amp;density" text="&amp;Trafik yoğunluğu"/>
+  <entry en="&amp;Lanes of new roads" text="Yeni yolların &amp;şeritleri"/>
+  <entry en="1 + 1 lanes (two-way)" text="1 + 1 şerit (çift yönlü)"/>
+  <entry en="2 + 2 lanes (two-way)" text="2 + 2 şerit (çift yönlü)"/>
+  <entry en="3 + 3 lanes (two-way)" text="3 + 3 şerit (çift yönlü)"/>
+  <entry en="1 lane (one-way)" text="1 şerit (tek yönlü)"/>
+  <entry en="2 lanes (one-way)" text="2 şerit (tek yönlü)"/>
+  <entry en="3 lanes (one-way)" text="3 şerit (tek yönlü)"/>
+  <entry en="Speed limit of new &amp;roads" text="Yeni yolların &amp;hız sınırı"/>
+  <entry en="&amp;Keys and mouse" text="&amp;Tuşlar ve fare"/>
+  <entry en="Open the &amp;log folder" text="&amp;Günlük klasörünü aç"/>
+  <entry en="Open the &amp;crash folder" text="&amp;Çökme klasörünü aç"/>
+  <entry en="Open the &amp;data folder" text="&amp;Veri klasörünü aç"/>
+  <entry en="Make a &amp;test crash" text="Test çök&amp;mesi oluştur"/>
+  <entry en="&amp;About Traffic Engine" text="Traffic Engine &amp;hakkında"/>
+  <entry en="Main toolbar" text="Ana araç çubuğu"/>
+  <entry en="Speed of the flow (real time = x1)" text="Akış hızı (gerçek zaman = x1)"/>
+  <entry en="Tools" text="Araçlar"/>
+  <entry en="Properties" text="Özellikler"/>
+  <entry en="Signs" text="İşaretler"/>
+  <entry en="Charts" text="Grafikler"/>
+
+  <!-- ===== Main window: messages and status bar ===== -->
+  <entry en="  [DEBUG MODE]" text="  [HATA AYIKLAMA MODU]"/>
+  <entry en="Test crash" text="Test çökmesi"/>
+  <entry en="The program stops now and writes a crash report and a dump file. Do you want to continue?" text="Program şimdi duracak ve bir çökme raporu ile bir döküm dosyası yazacak. Devam etmek istiyor musunuz?"/>
+  <entry en="Sign tool: click a road side to put the sign there." text="İşaret aracı: işareti koymak için bir yol kenarına tıklayın."/>
+  <entry en="Logging slowed the program. The log level is now WARN (Settings &gt; Logging)." text="Günlük kaydı programı yavaşlattı. Günlük düzeyi şimdi WARN (Ayarlar &gt; Günlük kaydı)."/>
+  <entry en="Empty workspace: draw roads with the road tool (F2). Dead ends make traffic." text="Boş çalışma alanı: yol aracı (F2) ile yol çizin. Çıkmaz uçlar trafik üretir."/>
+  <entry en="Cannot open the file:&#10;%1&#10;&#10;%2" text="Dosya açılamıyor:&#10;%1&#10;&#10;%2"/>
+  <entry en="Open workspace files" text="Çalışma alanı dosyalarını aç"/>
+  <entry en="Traffic Engine workspace (*.te);;OpenStreetMap data (*.osm)" text="Traffic Engine çalışma alanı (*.te);;OpenStreetMap verisi (*.osm)"/>
+  <entry en="Traffic Engine workspace (*.te)" text="Traffic Engine çalışma alanı (*.te)"/>
+  <entry en="Cannot save the file:&#10;%1&#10;&#10;%2" text="Dosya kaydedilemiyor:&#10;%1&#10;&#10;%2"/>
+  <entry en="Saved: %1" text="Kaydedildi: %1"/>
+  <entry en="The workspace &quot;%1&quot; has changes that are not saved. Do you want to save them?" text="&quot;%1&quot; çalışma alanında kaydedilmemiş değişiklikler var. Kaydetmek istiyor musunuz?"/>
+  <entry en="(no files)" text="(dosya yok)"/>
+  <entry en="Not saved yet" text="Henüz kaydedilmedi"/>
+  <entry en="Editor mode (the flow is stopped)" text="Düzenleyici modu (akış durduruldu)"/>
+  <entry en="Run" text="Çalışıyor"/>
+  <entry en="Pause" text="Duraklatıldı"/>
+  <entry en="Clock %1" text="Saat %1"/>
+  <entry en="Vehicles %1  Pedestrians %2" text="Araç %1  Yaya %2"/>
+  <entry en="Speed x%1 (real x%2)" text="Hız x%1 (gerçek x%2)"/>
+  <entry en="Log: %1" text="Günlük: %1"/>
+  <entry en="The API server cannot start: %1" text="API sunucusu başlatılamıyor: %1"/>
+  <entry en="The settings are saved. Some settings apply at the next start." text="Ayarlar kaydedildi. Bazı ayarlar bir sonraki başlatmada geçerli olur."/>
+  <entry en="Export the report" text="Raporu dışa aktar"/>
+  <entry en="Report saved: %1" text="Rapor kaydedildi: %1"/>
+  <entry en="Export" text="Dışa aktar"/>
+  <entry en="Cannot write the file:&#10;%1" text="Dosya yazılamıyor:&#10;%1"/>
+  <entry en="OpenStreetMap import failed: %1" text="OpenStreetMap içe aktarımı başarısız oldu: %1"/>
+  <entry en="Import from OpenStreetMap" text="OpenStreetMap'ten içe aktar"/>
+  <entry en="OpenStreetMap import: %1 ..." text="OpenStreetMap içe aktarımı: %1 ..."/>
+  <entry en="OpenStreetMap import: %1" text="OpenStreetMap içe aktarımı: %1"/>
+  <entry en="Export the view" text="Görünümü dışa aktar"/>
+  <entry en="View saved: %1" text="Görünüm kaydedildi: %1"/>
+  <entry en="Traffic %1%" text="Trafik %%1"/>
+  <entry en="Traffic density of all workspaces: vehicles %1%, pedestrians %2% of the rates of the traffic sources" text="Tüm çalışma alanlarının trafik yoğunluğu: trafik kaynaklarının oranlarının araçlar için %%1, yayalar için %%2 kadarı"/>
+
+  <!-- ===== Keys and mouse, about, crash ===== -->
+  <!-- The same text in both languages (no "No translation" line in the debug log) -->
+  <entry en="F1" text="F1"/>
+  <entry en="F2" text="F2"/>
+  <entry en="F3" text="F3"/>
+  <entry en="F4" text="F4"/>
+  <entry en="F5" text="F5"/>
+  <entry en="F6" text="F6"/>
+  <entry en="F7" text="F7"/>
+  <entry en="F8" text="F8"/>
+  <entry en="F9" text="F9"/>
+  <entry en="F10" text="F10"/>
+  <entry en="F11" text="F11"/>
+  <entry en="F12" text="F12"/>
+  <entry en="Ctrl+E" text="Ctrl+E"/>
+  <entry en="+ / -" text="+ / -"/>
+  <entry en="Esc" text="Esc"/>
+  <entry en="Del" text="Del"/>
+  <entry en="API: %1" text="API: %1"/>
+  <entry en="%1 L/100 km" text="%1 L/100 km"/>
+  <entry en="OpenStreetMap XML (*.osm *.xml)" text="OpenStreetMap XML (*.osm *.xml)"/>
+  <entry en="Keys and mouse" text="Tuşlar ve fare"/>
+  <entry en="Developer details (FPS, timings)" text="Geliştirici ayrıntıları (FPS, süreler)"/>
+  <entry en="Editor mode on or off (the flow stops in editor mode)" text="Düzenleyici modu açık veya kapalı (düzenleyici modunda akış durur)"/>
+  <entry en="Space" text="Boşluk"/>
+  <entry en=". (period)" text=". (nokta)"/>
+  <entry en="One simulation step" text="Bir simülasyon adımı"/>
+  <entry en="Faster / slower" text="Daha hızlı / daha yavaş"/>
+  <entry en="Cancel the road / select tool / no selection" text="Yolu iptal et / seçim aracı / seçimi kaldır"/>
+  <entry en="Enter, double-click" text="Enter, çift tıklama"/>
+  <entry en="Finish the road" text="Yolu bitir"/>
+  <entry en="Mouse wheel" text="Fare tekerleği"/>
+  <entry en="Zoom in and out at the cursor" text="İmleç konumunda yakınlaştır ve uzaklaştır"/>
+  <entry en="Drag" text="Sürükleme"/>
+  <entry en="Move the map (left, middle or right button)" text="Haritayı taşı (sol, orta veya sağ düğme)"/>
+  <entry en="Double-click a vehicle" text="Bir araca çift tıklama"/>
+  <entry en="The view follows the vehicle" text="Görünüm aracı takip eder"/>
+  <entry en="Ctrl+click on a road" text="Bir yola Ctrl+tıklama"/>
+  <entry en="Add a control point to the selected road (editor mode)" text="Seçili yola bir kontrol noktası ekle (düzenleyici modu)"/>
+  <entry en="About Traffic Engine" text="Traffic Engine hakkında"/>
+  <entry en="&lt;h3&gt;Traffic Engine %1&lt;/h3&gt;&lt;p&gt;A 2D traffic simulation engine.&lt;/p&gt;&lt;p&gt;Build: %2&lt;br&gt;Qt: %3&lt;br&gt;Boost: %4&lt;br&gt;Xerces-C: %5&lt;/p&gt;&lt;p&gt;Data folder: %6&lt;/p&gt;" text="&lt;h3&gt;Traffic Engine %1&lt;/h3&gt;&lt;p&gt;2B trafik simülasyon motoru.&lt;/p&gt;&lt;p&gt;Derleme: %2&lt;br&gt;Qt: %3&lt;br&gt;Boost: %4&lt;br&gt;Xerces-C: %5&lt;/p&gt;&lt;p&gt;Veri klasörü: %6&lt;/p&gt;"/>
+  <entry en="Unexpected stop" text="Beklenmeyen durma"/>
+  <entry en="Traffic Engine stopped unexpectedly in an earlier session.&#10;&#10;A crash report and a dump file are in this folder:&#10;%1&#10;&#10;Do you want to open the folder?" text="Traffic Engine önceki bir oturumda beklenmedik şekilde durdu.&#10;&#10;Çökme raporu ve döküm dosyası bu klasörde:&#10;%1&#10;&#10;Klasörü açmak istiyor musunuz?"/>
+  <entry en="from config.xml" text="config.xml dosyasından"/>
+
+  <!-- ===== Tools of the world view ===== -->
+  <entry en="Select" text="Seç"/>
+  <entry en="Road" text="Yol"/>
+  <entry en="Traffic light" text="Trafik ışığı"/>
+  <entry en="Sign" text="İşaret"/>
+  <entry en="Cones" text="Dubalar"/>
+  <entry en="Barrier" text="Bariyer"/>
+  <entry en="Road closure" text="Yol kapatma"/>
+  <entry en="Level crossing" text="Hemzemin geçit"/>
+  <entry en="Bus stop" text="Otobüs durağı"/>
+  <entry en="Traffic demand" text="Trafik talebi"/>
+  <entry en="Erase" text="Sil"/>
+  <entry en="Click an element to select it. Ctrl+click: select more roads (or remove a road from the selection). Drag to move the map. In editor mode, drag a node to move it. Shift+click on the selected road adds a control point." text="Seçmek için bir öğeye tıklayın. Ctrl+tıklama: daha fazla yol seçin (veya bir yolu seçimden çıkarın). Haritayı taşımak için sürükleyin. Düzenleyici modunda bir düğümü taşımak için sürükleyin. Seçili yola Shift+tıklama bir kontrol noktası ekler."/>
+  <entry en="%1 roads selected" text="%1 yol seçili"/>
+  <entry en="%1 roads are selected. A change in the property panel applies to all of them." text="%1 yol seçili. Özellikler panelindeki bir değişiklik hepsine uygulanır."/>
+  <entry en="Selected roads" text="Seçili yollar"/>
+  <entry en="IDs" text="Kimlikler"/>
+  <entry en="Total length" text="Toplam uzunluk"/>
+  <entry en="Total length: %1 m" text="Toplam uzunluk: %1 m"/>
+  <entry en="Remove the selected roads." text="Seçili yolları kaldır."/>
+  <entry en="Remove roads" text="Yolları kaldır"/>
+  <entry en="Remove the %1 selected roads?" text="Seçili %1 yol kaldırılsın mı?"/>
+  <entry en="The selected roads have different values. A change applies to all of them." text="Seçili yolların değerleri farklı. Bir değişiklik hepsine uygulanır."/>
+  <entry en="A change applies to all selected roads. * The roads have different values: the value of the last selected road shows. Ctrl+click a road to add it to the selection or to remove it." text="Bir değişiklik tüm seçili yollara uygulanır. * Yolların değerleri farklı: son seçilen yolun değeri gösterilir. Bir yolu seçime eklemek veya seçimden çıkarmak için yola Ctrl+tıklayın."/>
+  <entry en="Click to set the road points. Click a node or a road to connect to it. Double-click or Enter: finish. Esc: cancel. Shift: 15-degree steps." text="Yol noktalarını belirlemek için tıklayın. Bağlanmak için bir düğüme veya yola tıklayın. Çift tıklama veya Enter: bitir. Esc: iptal. Shift: 15 derecelik adımlar."/>
+  <entry en="Bridge or overpass" text="Köprü veya üst geçit"/>
+  <entry en="Tunnel or underpass" text="Tünel veya alt geçit"/>
+  <entry en="Draw a bridge or an overpass. Start and end on a node or a road. Click the points beside the road below the bridge, not on it: a click on a road connects to it. Double-click or Enter: finish. Esc: cancel." text="Bir köprü veya üst geçit çizin. Bir düğümde veya bir yolda başlayın ve bitirin. Noktaları köprünün altındaki yolun yanına tıklayın, üstüne değil: bir yola tıklamak ona bağlanır. Çift tıklama veya Enter: bitir. Esc: iptal."/>
+  <entry en="Draw a tunnel or an underpass. Start and end on a node or a road. Click the points beside the road above the tunnel, not on it: a click on a road connects to it. Double-click or Enter: finish. Esc: cancel." text="Bir tünel veya alt geçit çizin. Bir düğümde veya bir yolda başlayın ve bitirin. Noktaları tünelin üstündeki yolun yanına tıklayın, üstüne değil: bir yola tıklamak ona bağlanır. Çift tıklama veya Enter: bitir. Esc: iptal."/>
+  <entry en="Click a junction to add a traffic light." text="Trafik ışığı eklemek için bir kavşağa tıklayın."/>
+  <entry en="Click a road side to put the sign there. The sign is for the traffic on that side. Select the sign in the Signs panel." text="İşareti koymak için bir yol kenarına tıklayın. İşaret o taraftaki trafik içindir. İşareti İşaretler panelinde seçin."/>
+  <entry en="Click a lane to close a part of it with cones." text="Bir kısmını dubalarla kapatmak için bir şeride tıklayın."/>
+  <entry en="Click a lane to close a part of it with a barrier." text="Bir kısmını bariyerle kapatmak için bir şeride tıklayın."/>
+  <entry en="Click a road to close it for all vehicles." text="Tüm araçlara kapatmak için bir yola tıklayın."/>
+  <entry en="Click a road to add a level crossing with barriers." text="Bariyerli hemzemin geçit eklemek için bir yola tıklayın."/>
+  <entry en="Click a road side to add a bus stop on that side." text="O tarafa otobüs durağı eklemek için bir yol kenarına tıklayın."/>
+  <entry en="Click a dead-end node to set its traffic demand." text="Trafik talebini ayarlamak için bir çıkmaz uç düğümüne tıklayın."/>
+  <entry en="Click an element to remove it." text="Kaldırmak için bir öğeye tıklayın."/>
+
+  <!-- ===== World view: messages ===== -->
+  <entry en="OpenGL 2.1 is not available. The world cannot be shown.&#10;%1" text="OpenGL 2.1 kullanılamıyor. Dünya gösterilemiyor.&#10;%1"/>
+  <entry en="The view follows the selected element. Drag the map to stop." text="Görünüm seçili öğeyi takip ediyor. Durdurmak için haritayı sürükleyin."/>
+  <entry en="Editor mode is on. The flow is stopped." text="Düzenleyici modu açık. Akış durduruldu."/>
+  <entry en="Control point added to road %1" text="Kontrol noktası eklendi: yol %1"/>
+  <entry en="Set the traffic demand of node %1 in the Properties panel." text="Düğüm %1 için trafik talebini Özellikler panelinde ayarlayın."/>
+  <entry en="Click a dead-end node. Only a dead end makes traffic." text="Bir çıkmaz uç düğümüne tıklayın. Yalnızca çıkmaz uçlar trafik üretir."/>
+  <entry en="Click the next points. Double-click or Enter to finish the road." text="Sonraki noktalara tıklayın. Yolu bitirmek için çift tıklayın veya Enter tuşuna basın."/>
+  <entry en="The road is too short. A road must be 3 m or longer." text="Yol çok kısa. Bir yol en az 3 m olmalıdır."/>
+  <entry en="The start and the end of the road are the same node. The road is not added." text="Yolun başlangıcı ve sonu aynı düğüm. Yol eklenmedi."/>
+  <entry en="Road %1 added (node %2 -&gt; node %3, %4 m, level %5)" text="Yol %1 eklendi (düğüm %2 -&gt; düğüm %3, %4 m, seviye %5)"/>
+  <entry en="Road %1 is added. Click to start the next road." text="Yol %1 eklendi. Sonraki yolu başlatmak için tıklayın."/>
+  <entry en="Click a junction (a node with two or more roads)." text="Bir kavşağa tıklayın (iki veya daha fazla yolu olan bir düğüm)."/>
+  <entry en="Traffic light %1 added at node %2" text="Trafik ışığı %1 eklendi (düğüm %2)"/>
+  <entry en="Traffic light %1. Set its program in the Properties panel or with Tools &gt; Traffic light program." text="Trafik ışığı %1. Programını Özellikler panelinde veya Araçlar &gt; Trafik ışığı programı ile ayarlayın."/>
+  <entry en="Select a sign in the Signs panel first." text="Önce İşaretler panelinde bir işaret seçin."/>
+  <entry en="Click near a road. The sign is for the traffic on the side that you click." text="Bir yolun yakınına tıklayın. İşaret, tıkladığınız taraftaki trafik içindir."/>
+  <entry en="Sign %1 (%2) added on road %3" text="İşaret %1 (%2) eklendi: yol %3"/>
+  <entry en="Click a road." text="Bir yola tıklayın."/>
+  <entry en="Bus stop %1" text="Otobüs durağı %1"/>
+  <entry en="Cones %1" text="Dubalar %1"/>
+  <entry en="Barrier %1" text="Bariyer %1"/>
+  <entry en="Road closure %1" text="Yol kapatma %1"/>
+  <entry en="Level crossing %1" text="Hemzemin geçit %1"/>
+  <entry en="%1 %2 added on road %3" text="%1 %2 eklendi: yol %3"/>
+  <entry en="There is no element at this point." text="Bu noktada öğe yok."/>
+  <entry en="Removed: %1" text="Kaldırıldı: %1"/>
+  <entry en="Remove is possible only in editor mode (Ctrl+E)." text="Kaldırma yalnızca düzenleyici modunda yapılabilir (Ctrl+E)."/>
+
+  <!-- ===== World view: labels, directions, colors ===== -->
+  <entry en="Road %1" text="Yol %1"/>
+  <entry en="from the %1" text="%1 yönünden"/>
+  <entry en="from the north" text="kuzey yönünden"/>
+  <entry en="east" text="doğu"/>
+  <entry en="north-east" text="kuzeydoğu"/>
+  <entry en="north" text="kuzey"/>
+  <entry en="north-west" text="kuzeybatı"/>
+  <entry en="west" text="batı"/>
+  <entry en="south-west" text="güneybatı"/>
+  <entry en="south" text="güney"/>
+  <entry en="south-east" text="güneydoğu"/>
+  <entry en="red" text="kırmızı"/>
+  <entry en="red and yellow" text="kırmızı ve sarı"/>
+  <entry en="green" text="yeşil"/>
+  <entry en="yellow" text="sarı"/>
+  <entry en="all red" text="tüm kırmızı"/>
+  <entry en="right turn" text="sağa dönüş"/>
+  <entry en="left turn" text="sola dönüş"/>
+  <entry en="U-turn" text="U dönüşü"/>
+  <entry en="straight on" text="düz gidiş"/>
+
+  <!-- ===== World view: popup of a vehicle or a pedestrian ===== -->
+  <entry en="In the junction (%1)" text="Kavşakta (%1)"/>
+  <entry en="At the bus stop (%1 s)" text="Otobüs durağında (%1 sn)"/>
+  <entry en="Waits at the red light" text="Kırmızı ışıkta bekliyor"/>
+  <entry en="Stops at the STOP sign" text="DUR işaretinde duruyor"/>
+  <entry en="Gives way to other traffic" text="Diğer trafiğe yol veriyor"/>
+  <entry en="Waits" text="Bekliyor"/>
+  <entry en="Waits in the queue" text="Kuyrukta bekliyor"/>
+  <entry en="Drives and changes the lane" text="Sürüyor ve şerit değiştiriyor"/>
+  <entry en="Drives" text="Sürüyor"/>
+  <entry en="%1 L/h (stopped)" text="%1 L/sa (duruyor)"/>
+  <entry en="Speed: %1 km/h (limit %2 km/h)" text="Hız: %1 km/sa (sınır %2 km/sa)"/>
+  <entry en="Acceleration: %1 m/s2" text="İvme: %1 m/s2"/>
+  <entry en="Fuel now: %1" text="Anlık yakıt: %1"/>
+  <entry en="Fuel used: %1 L   CO2: %2 kg" text="Kullanılan yakıt: %1 L   CO2: %2 kg"/>
+  <entry en="Passengers: %1" text="Yolcular: %1"/>
+  <entry en="Route: node %1 to node %2, %3 km left" text="Rota: düğüm %1 → düğüm %2, %3 km kaldı"/>
+  <entry en="Trip: %1 km in %2" text="Yolculuk: %1 km, süre %2"/>
+  <entry en="Stops: %1 (stopped %2 s), congestion %3 s" text="Duruşlar: %1 (%2 sn durdu), sıkışıklık %3 sn"/>
+  <entry en="State: %1" text="Durum: %1"/>
+  <entry en="vehicle %1" text="araç %1"/>
+  <entry en="traffic light %1" text="trafik ışığı %1"/>
+  <entry en="sign %1" text="işaret %1"/>
+  <entry en="pedestrian %1" text="yaya %1"/>
+  <entry en="another element" text="başka bir öğe"/>
+  <entry en=" (%1 s)" text=" (%1 sn)"/>
+  <entry en="Waits behind %1" text="%1 arkasında bekliyor"/>
+  <entry en="Waits for the green light (%1)" text="Yeşil ışığı bekliyor (%1)"/>
+  <entry en="Stops at the STOP sign (%1)" text="DUR işaretinde duruyor (%1)"/>
+  <entry en="Gives way to %1" text="Yol veriyor: %1"/>
+  <entry en="Waits: %1 has the junction" text="Bekliyor: kavşak %1 için ayrıldı"/>
+  <entry en="Waits: no space after the junction (%1)" text="Bekliyor: kavşaktan sonra yer yok (%1)"/>
+  <entry en="Waits: %1 stands in the junction" text="Bekliyor: %1 kavşakta duruyor"/>
+  <entry en="Waits for the pedestrians on the crosswalk (%1)" text="Yaya geçidindeki yayaları bekliyor (%1)"/>
+  <entry en="Waits at the level crossing (%1)" text="Hemzemin geçitte bekliyor (%1)"/>
+  <entry en="Waits: the lane is closed (%1)" text="Bekliyor: şerit kapalı (%1)"/>
+  <entry en="Lets %1 into the lane" text="Şeride giriş için yol veriyor: %1"/>
+  <entry en="Waits: no movement to the route from this lane" text="Bekliyor: bu şeritten rotaya geçiş yok"/>
+  <entry en="Walks" text="Yürüyor"/>
+  <entry en="Waits at the crosswalk (%1 s)" text="Yaya geçidinde bekliyor (%1 sn)"/>
+  <entry en="Crosses the road" text="Yolu geçiyor"/>
+  <entry en="Speed: %1 km/h" text="Hız: %1 km/sa"/>
+  <entry en="Route: node %1 to node %2" text="Rota: düğüm %1 → düğüm %2"/>
+
+  <!-- ===== World view: popup of a light, a road, a node, a sign, an object ===== -->
+  <entry en="Fixed time" text="Sabit süreli"/>
+  <entry en="Actuated" text="Trafik uyarmalı"/>
+  <entry en="External (API)" text="Harici (API)"/>
+  <entry en="Algorithm: %1" text="Algoritma: %1"/>
+  <entry en="Phase %1 of %2: %3, %4 s left" text="Faz %1 / %2: %3, %4 sn kaldı"/>
+  <entry en="Cycle time: %1 s" text="Devre süresi: %1 sn"/>
+  <entry en="%1 (%2): %3, %4 s, %5 waiting" text="%1 (%2): %3, %4 sn, %5 bekliyor"/>
+  <entry en="Total waiting: %1 vehicles" text="Toplam bekleyen: %1 araç"/>
+  <entry en="Length: %1 m" text="Uzunluk: %1 m"/>
+  <entry en="Lanes: A to B %1, B to A %2" text="Şeritler: A → B %1, B → A %2"/>
+  <entry en="Speed limit: %1 km/h" text="Hız sınırı: %1 km/sa"/>
+  <entry en="Vehicles now: %1" text="Şu anki araçlar: %1"/>
+  <entry en="Mean speed: %1 km/h" text="Ortalama hız: %1 km/sa"/>
+  <entry en="Density: %1 veh/km" text="Yoğunluk: %1 araç/km"/>
+  <entry en="Roads: %1" text="Yollar: %1"/>
+  <entry en="Traffic source: %1" text="Trafik kaynağı: %1"/>
+  <entry en="Demand now: %1 veh/h, %2 ped/h" text="Şu anki talep: %1 araç/sa, %2 yaya/sa"/>
+  <entry en="Global traffic density: vehicles %1%, pedestrians %2%" text="Genel trafik yoğunluğu: araçlar %%1, yayalar %%2"/>
+  <entry en="Traffic light: %1" text="Trafik ışığı: %1"/>
+  <entry en="Code: %1" text="Kod: %1"/>
+  <entry en="(not confirmed yet)" text="(henüz doğrulanmadı)"/>
+  <entry en="English name: %1" text="İngilizce adı: %1"/>
+  <entry en="Turkish name: %1" text="Türkçe adı: %1"/>
+  <entry en="Effect: %1" text="Etkisi: %1"/>
+  <entry en="For: traffic from %1" text="Geçerli trafik: %1"/>
+  <entry en="A to B" text="A'dan B'ye"/>
+  <entry en="B to A" text="B'den A'ya"/>
+  <entry en="Value: %1 km/h" text="Değer: %1 km/sa"/>
+  <entry en="open" text="açık"/>
+  <entry en="barriers go down" text="bariyerler iniyor"/>
+  <entry en="closed (train)" text="kapalı (tren)"/>
+  <entry en="barriers go up" text="bariyerler kalkıyor"/>
+  <entry en="Next train in: %1 s" text="Sonraki tren: %1 sn sonra"/>
+  <entry en="Barrier down time: %1 s" text="Bariyer kapalı kalma süresi: %1 sn"/>
+  <entry en="Name: %1" text="Ad: %1"/>
+  <entry en="Waiting passengers: %1" text="Bekleyen yolcular: %1"/>
+  <entry en="Stop time of a bus: %1 s" text="Otobüs duraklama süresi: %1 sn"/>
+  <entry en="Blocked lane: %1" text="Kapalı şerit: %1"/>
+  <entry en="Blocked length: %1 m" text="Kapalı uzunluk: %1 m"/>
+  <entry en="Closed for: %1" text="Kapalı olduğu yön: %1"/>
+  <entry en="both directions" text="her iki yön"/>
+  <entry en="traffic from A to B" text="A'dan B'ye trafik"/>
+  <entry en="traffic from B to A" text="B'den A'ya trafik"/>
+
+  <!-- ===== World view: state, banner, legend ===== -->
+  <entry en="Editor" text="Düzenleyici"/>
+  <entry en="EDITOR MODE - THE FLOW IS STOPPED" text="DÜZENLEYİCİ MODU - AKIŞ DURDURULDU"/>
+  <entry en="Free" text="Serbest"/>
+  <entry en="Slow" text="Yavaş"/>
+  <entry en="Heavy" text="Yoğun"/>
+  <entry en="Stopped" text="Durmuş"/>
+  <entry en="Traffic:" text="Trafik:"/>
+  <entry en="Map data © OpenStreetMap contributors" text="Harita verileri © OpenStreetMap katkıcıları"/>
+
+  <!-- ===== Properties ===== -->
+  <entry en="Workspace" text="Çalışma alanı"/>
+  <entry en="Node %1" text="Düğüm %1"/>
+  <entry en="Road %1 - %2" text="Yol %1 - %2"/>
+  <entry en="Traffic light %1" text="Trafik ışığı %1"/>
+  <entry en="Sign %1 - %2" text="İşaret %1 - %2"/>
+  <entry en="Sign %1" text="İşaret %1"/>
+  <entry en="Object %1" text="Nesne %1"/>
+  <entry en="Vehicle %1" text="Araç %1"/>
+  <entry en="Pedestrian %1" text="Yaya %1"/>
+  <entry en="Free node" text="Serbest düğüm"/>
+  <entry en="Dead end (traffic source and destination)" text="Çıkmaz uç (trafik kaynağı ve hedefi)"/>
+  <entry en="Road connection" text="Yol bağlantısı"/>
+  <entry en="Junction with %1 roads" text="%1 yollu kavşak"/>
+  <entry en="Name" text="Ad"/>
+  <entry en="Description" text="Açıklama"/>
+  <entry en="Ground material" text="Zemin malzemesi"/>
+  <entry en="Grass" text="Çim"/>
+  <entry en="Soil" text="Toprak"/>
+  <entry en="Sand" text="Kum"/>
+  <entry en="Snow" text="Kar"/>
+  <entry en="Concrete" text="Beton"/>
+  <entry en="Asphalt" text="Asfalt"/>
+  <entry en="Start clock" text="Başlangıç saati"/>
+  <entry en="Map (origin of the world)" text="Harita (dünyanın başlangıç noktası)"/>
+  <entry en="Latitude" text="Enlem"/>
+  <entry en="Longitude" text="Boylam"/>
+  <entry en="Contents" text="İçerik"/>
+  <entry en="Nodes" text="Düğümler"/>
+  <entry en="Roads" text="Yollar"/>
+  <entry en="Road length" text="Yol uzunluğu"/>
+  <entry en="Traffic lights" text="Trafik ışıkları"/>
+  <entry en="Other objects" text="Diğer nesneler"/>
+  <entry en="Node" text="Düğüm"/>
+  <entry en="ID" text="Kimlik"/>
+  <entry en="Type" text="Tür"/>
+  <entry en="Position X" text="Konum X"/>
+  <entry en="Position Y" text="Konum Y"/>
+  <entry en="Traffic demand (peak hour)" text="Trafik talebi (zirve saat)"/>
+  <entry en="Make traffic" text="Trafik üret"/>
+  <entry en="Vehicles" text="Araçlar"/>
+  <entry en="Pedestrians" text="Yayalar"/>
+  <entry en="Share of buses" text="Otobüs oranı"/>
+  <entry en="Share of motorcycles" text="Motosiklet oranı"/>
+  <entry en="Daily profile (peaks at 08:00 and 18:00)" text="Günlük profil (08:00 ve 18:00'de zirve)"/>
+  <entry en="Nodes (A -&gt; B)" text="Düğümler (A -&gt; B)"/>
+  <entry en="Length" text="Uzunluk"/>
+  <entry en="Lanes" text="Şeritler"/>
+  <entry en="Lanes A -&gt; B" text="Şeritler A -&gt; B"/>
+  <entry en="Lanes B -&gt; A (0 = one-way)" text="Şeritler B -&gt; A (0 = tek yön)"/>
+  <entry en="Lane width" text="Şerit genişliği"/>
+  <entry en="Speed limit" text="Hız sınırı"/>
+  <entry en="Overtaking allowed (dashed lines)" text="Sollama serbest (kesikli çizgiler)"/>
+  <entry en="Median strip" text="Orta refüj"/>
+  <entry en="Road side" text="Yol kenarı"/>
+  <entry en="Sidewalk on the left" text="Solda kaldırım"/>
+  <entry en="Sidewalk on the right" text="Sağda kaldırım"/>
+  <entry en="Bicycle lanes" text="Bisiklet yolları"/>
+  <entry en="Ditches" text="Hendekler"/>
+  <entry en="Guard rails" text="Koruma bariyerleri"/>
+  <entry en="Level" text="Seviye"/>
+  <entry en="Lower tunnel (level -2)" text="Alt tünel (seviye -2)"/>
+  <entry en="Tunnel or underpass (level -1)" text="Tünel veya alt geçit (seviye -1)"/>
+  <entry en="Ground (level 0)" text="Zemin (seviye 0)"/>
+  <entry en="Bridge or overpass (level 1)" text="Köprü veya üst geçit (seviye 1)"/>
+  <entry en="Upper bridge (level 2)" text="Üst köprü (seviye 2)"/>
+  <entry en="Algorithm" text="Algoritma"/>
+  <entry en="Actuated (vehicle detection)" text="Trafik uyarmalı (araç algılama)"/>
+  <entry en="Start offset" text="Başlangıç kayması"/>
+  <entry en="Red and yellow time" text="Kırmızı-sarı süresi"/>
+  <entry en="Cycle time" text="Devre süresi"/>
+  <entry en="Phase %1" text="Faz %1"/>
+  <entry en="road %1" text="yol %1"/>
+  <entry en="Green for" text="Yeşil yanan"/>
+  <entry en="Pedestrians only" text="Yalnızca yayalar"/>
+  <entry en="Green" text="Yeşil"/>
+  <entry en="Yellow" text="Sarı"/>
+  <entry en="All red" text="Tüm kırmızı"/>
+  <entry en="Minimum green" text="En kısa yeşil"/>
+  <entry en="Maximum green" text="En uzun yeşil"/>
+  <entry en="Official code" text="Resmî kod"/>
+  <entry en="Turkish name" text="Türkçe adı"/>
+  <entry en="Effect" text="Etkisi"/>
+  <entry en="Value" text="Değer"/>
+  <entry en="For" text="Geçerli trafik"/>
+  <entry en="Position on the road (from A)" text="Yol üzerindeki konum (A'dan)"/>
+  <entry en="Direction" text="Yön"/>
+  <entry en="Blocked lane (0 = right, -1 = all)" text="Kapalı şerit (0 = sağ, -1 = tümü)"/>
+  <entry en="Blocked length" text="Kapalı uzunluk"/>
+  <entry en="Closed for" text="Kapalı olduğu yön"/>
+  <entry en="Time between trains" text="Trenler arası süre"/>
+  <entry en="Barrier down time" text="Bariyer kapalı kalma süresi"/>
+  <entry en="Time offset" text="Zaman kayması"/>
+  <entry en="Side (traffic)" text="Taraf (trafik)"/>
+  <entry en="Stop time of a bus" text="Otobüs duraklama süresi"/>
+  <entry en="Traffic from A to B" text="A'dan B'ye trafik"/>
+  <entry en="Traffic from B to A" text="B'den A'ya trafik"/>
+  <entry en="Both directions" text="Her iki yön"/>
+  <entry en="Traffic light program..." text="Trafik ışığı programı..."/>
+  <entry en="Remove" text="Kaldır"/>
+  <entry en="No workspace" text="Çalışma alanı yok"/>
+  <entry en="Remove the selected element." text="Seçili öğeyi kaldır."/>
+  <entry en="Remove is possible only in editor mode." text="Kaldırma yalnızca düzenleyici modunda yapılabilir."/>
+  <entry en="Live data" text="Canlı veriler"/>
+  <entry en="Select an element in the world to see its properties. You can change the properties when the flow runs." text="Özelliklerini görmek için dünyada bir öğe seçin. Özellikleri akış çalışırken de değiştirebilirsiniz."/>
+  <entry en="The element does not exist anymore." text="Öğe artık mevcut değil."/>
+
+  <!-- ===== Settings ===== -->
+  <entry en="Settings" text="Ayarlar"/>
+  <entry en="General" text="Genel"/>
+  <entry en="Open the demo workspace at the start" text="Başlangıçta örnek çalışma alanını aç"/>
+  <entry en="Show the splash screen at the start" text="Başlangıçta açılış ekranını göster"/>
+  <entry en="Traffic simulation on real roads" text="Gerçek yollarda trafik simülasyonu"/>
+  <entry en="Version %1" text="Sürüm %1"/>
+  <entry en="OpenStreetMap import  -  Traffic lights  -  Congestion analysis  -  External API" text="OpenStreetMap içe aktarma  -  Trafik ışıkları  -  Sıkışıklık analizi  -  Harici API"/>
+  <entry en="Make the main window..." text="Ana pencere hazırlanıyor..."/>
+  <entry en="Open the start workspace..." text="Başlangıç çalışma alanı açılıyor..."/>
+  <entry en="Open the files..." text="Dosyalar açılıyor..."/>
+  <entry en="Start the API server..." text="API sunucusu başlatılıyor..."/>
+  <entry en="Ready" text="Hazır"/>
+  <entry en="Logging" text="Günlük kaydı"/>
+  <entry en="The log files are in %1. The logging changes apply immediately." text="Günlük dosyaları şu klasörde: %1. Günlük kaydı değişiklikleri hemen geçerli olur."/>
+  <entry en="Write log files" text="Günlük dosyaları yaz"/>
+  <entry en="Log level" text="Günlük düzeyi"/>
+  <entry en="Trace (all details)" text="İz (tüm ayrıntılar)"/>
+  <entry en="Debug" text="Hata ayıklama"/>
+  <entry en="Information" text="Bilgi"/>
+  <entry en="Warnings" text="Uyarılar"/>
+  <entry en="Errors only" text="Yalnızca hatalar"/>
+  <entry en="Lower the level if logging slows the program" text="Günlük kaydı programı yavaşlatırsa düzeyi düşür"/>
+  <entry en="Maximum log lines per second" text="Saniyede en fazla günlük satırı"/>
+  <entry en="Maximum size of a log file" text="Bir günlük dosyasının en büyük boyutu"/>
+  <entry en="Compress old log files with 7-Zip" text="Eski günlük dosyalarını 7-Zip ile sıkıştır"/>
+  <entry en="Open the log folder" text="Günlük klasörünü aç"/>
+  <entry en="Debug mode: log level TRACE, each log line goes to the file immediately, full memory dumps and a console window. A change applies at the next start. The command line argument --debug also starts the debug mode." text="Hata ayıklama modu: günlük düzeyi TRACE, her günlük satırı hemen dosyaya yazılır, tam bellek dökümleri ve bir konsol penceresi. Bir değişiklik bir sonraki başlatmada geçerli olur. --debug komut satırı bağımsız değişkeni de hata ayıklama modunu başlatır."/>
+  <entry en="Start in debug mode" text="Hata ayıklama modunda başlat"/>
+  <entry en="Full memory in crash dumps (large files)" text="Çökme dökümlerinde tam bellek (büyük dosyalar)"/>
+  <entry en="Open the crash folder" text="Çökme klasörünü aç"/>
+  <entry en="Display" text="Görüntü"/>
+  <entry en="Smooth edges (MSAA) and vertical sync apply at the next start." text="Yumuşak kenarlar (MSAA) ve dikey eşitleme bir sonraki başlatmada geçerli olur."/>
+  <entry en="Smooth edges (MSAA)" text="Yumuşak kenarlar (MSAA)"/>
+  <entry en="Off" text="Kapalı"/>
+  <entry en="2 samples" text="2 örnek"/>
+  <entry en="4 samples" text="4 örnek"/>
+  <entry en="8 samples" text="8 örnek"/>
+  <entry en="Vertical sync (can halve the FPS in remote sessions)" text="Dikey eşitleme (uzak oturumlarda FPS'yi yarıya düşürebilir)"/>
+  <entry en="Frame limit (0 = no limit)" text="Kare sınırı (0 = sınır yok)"/>
+  <entry en="Show the developer details at the start (F12)" text="Başlangıçta geliştirici ayrıntılarını göster (F12)"/>
+  <entry en="Show the countdowns of the traffic lights" text="Trafik ışıklarının geri sayımlarını göster"/>
+  <entry en="Show the grid" text="Izgarayı göster"/>
+  <entry en="Ground of new workspaces" text="Yeni çalışma alanlarının zemini"/>
+  <entry en="Simulation" text="Simülasyon"/>
+  <entry en="The time step and the start speed apply to new workspaces. The traffic density applies immediately to all open workspaces (100% = the rates of the traffic sources)." text="Zaman adımı ve başlangıç hızı yeni çalışma alanlarına uygulanır. Trafik yoğunluğu tüm açık çalışma alanlarına hemen uygulanır (%100 = trafik kaynaklarının oranları)."/>
+  <entry en="Traffic density: vehicles" text="Trafik yoğunluğu: araçlar"/>
+  <entry en="Traffic density: pedestrians" text="Trafik yoğunluğu: yayalar"/>
+  <entry en="Time step" text="Zaman adımı"/>
+  <entry en="Start speed" text="Başlangıç hızı"/>
+  <entry en="Maximum steps for each frame" text="Kare başına en fazla adım"/>
+  <entry en="Statistics interval" text="İstatistik aralığı"/>
+  <entry en="Gridlock: remove a vehicle that waits more than (0 = never)" text="Kilitlenme: bu süreden uzun bekleyen aracı kaldır (0 = asla)"/>
+  <entry en="Map" text="Harita"/>
+  <entry en="The OpenStreetMap import (File &gt; Import from OpenStreetMap) and the map background of the workspaces with a geographic origin. The tile address must have {z}, {x} and {y}. The servers of openstreetmap.org need a correct user agent; do not use them for very large areas." text="OpenStreetMap içe aktarımı (Dosya &gt; OpenStreetMap'ten içe aktar) ve coğrafi başlangıç noktası olan çalışma alanlarının harita arka planı. Döşeme adresinde {z}, {x} ve {y} olmalıdır. openstreetmap.org sunucuları doğru bir kullanıcı aracısı ister; bunları çok büyük alanlar için kullanmayın."/>
+  <entry en="Show the map background (Ctrl+M)" text="Harita arka planını göster (Ctrl+M)"/>
+  <entry en="Map opacity" text="Harita opaklığı"/>
+  <entry en="Map pale colors" text="Harita soluk renkleri"/>
+  <entry en="Maximum zoom level of the tiles" text="Döşemelerin en yüksek yakınlaştırma düzeyi"/>
+  <entry en="Keep the tiles for" text="Döşemelerin saklanma süresi"/>
+  <entry en="Map tile address" text="Harita döşemesi adresi"/>
+  <entry en="Overpass API address" text="Overpass API adresi"/>
+  <entry en="Other Overpass servers (; between them)" text="Diğer Overpass sunucuları (aralarında ;)"/>
+  <entry en="Place search address (Nominatim)" text="Yer arama adresi (Nominatim)"/>
+  <entry en="User agent" text="Kullanıcı aracısı"/>
+  <entry en="Remove the saved map tiles" text="Kaydedilen harita döşemelerini sil"/>
+  <entry en="The saved map tiles are removed" text="Kaydedilen harita döşemeleri silindi"/>
+  <entry en="The external API (HTTP and JSON, see docs/api.md): other programs read the state of the simulation and send traffic light phases, the traffic density and run / pause commands. Example: GET http://127.0.0.1:8088/api/v1/status. Use a token if the API listens on all network interfaces." text="Harici API (HTTP ve JSON, bkz. docs/api.md): diğer programlar simülasyonun durumunu okur; trafik ışığı fazlarını, trafik yoğunluğunu ve çalıştır / duraklat komutlarını gönderir. Örnek: GET http://127.0.0.1:8088/api/v1/status. API tüm ağ arabirimlerini dinliyorsa bir belirteç kullanın."/>
+  <entry en="Start the API server" text="API sunucusunu başlat"/>
+  <entry en="Port" text="Bağlantı noktası"/>
+  <entry en="Listen on all network interfaces (not only this computer)" text="Tüm ağ arabirimlerini dinle (yalnızca bu bilgisayarı değil)"/>
+  <entry en="Token (empty = no token)" text="Belirteç (boş = belirteç yok)"/>
+
+  <!-- ===== OpenStreetMap import ===== -->
+  <entry en="Download from the Overpass server: %1 kB" text="Overpass sunucusundan indiriliyor: %1 kB"/>
+  <entry en="The Overpass server prepares the data (this can take some seconds)..." text="Overpass sunucusu verileri hazırlıyor (bu birkaç saniye sürebilir)..."/>
+  <entry en="Read the file..." text="Dosya okunuyor..."/>
+  <entry en="Conversion of the data into roads, junctions and lights..." text="Veriler yollara, kavşaklara ve ışıklara dönüştürülüyor..."/>
+  <entry en="The download is cancelled." text="İndirme iptal edildi."/>
+  <entry en="The Overpass servers are busy (HTTP %1). Try again after some minutes, or select a smaller area." text="Overpass sunucuları meşgul (HTTP %1). Birkaç dakika sonra yeniden deneyin veya daha küçük bir alan seçin."/>
+  <entry en="The Overpass server sent HTTP %1: %2" text="Overpass sunucusu HTTP %1 gönderdi: %2"/>
+  <entry en="No connection to an Overpass server:&#10;%1" text="Hiçbir Overpass sunucusuna bağlanılamadı:&#10;%1"/>
+  <entry en="Cannot open the file: %1" text="Dosya açılamıyor: %1"/>
+  <entry en="The file is too large (more than %1 MB). Use a smaller area." text="Dosya çok büyük (%1 MB'tan fazla). Daha küçük bir alan kullanın."/>
+  <entry en="Find a place, for example &quot;Kızılay, Ankara&quot;" text="Bir yer bulun, örneğin &quot;Kızılay, Ankara&quot;"/>
+  <entry en="Find" text="Bul"/>
+  <entry en="Source of the data" text="Verinin kaynağı"/>
+  <entry en="Area from the Overpass API (internet)" text="Overpass API'den alan (internet)"/>
+  <entry en="OpenStreetMap file (.osm)" text="OpenStreetMap dosyası (.osm)"/>
+  <entry en="(the area on the map)" text="(haritadaki alan)"/>
+  <entry en="Paste &quot;latitude, longitude&quot;, for example 39.9208, 32.8541" text="&quot;enlem, boylam&quot; yapıştırın, örneğin 39.9208, 32.8541"/>
+  <entry en="Place" text="Yer"/>
+  <entry en="Coordinates" text="Koordinatlar"/>
+  <entry en="Width" text="Genişlik"/>
+  <entry en="Height" text="Yükseklik"/>
+  <entry en="Browse..." text="Gözat..."/>
+  <entry en="Conversion" text="Dönüştürme"/>
+  <entry en="Residential streets" text="Yerleşim sokakları"/>
+  <entry en="Service roads (no parking aisles)" text="Servis yolları (otopark koridorları hariç)"/>
+  <entry en="Give way signs on the minor roads" text="Tali yollarda yol ver işaretleri"/>
+  <entry en="Bus stops" text="Otobüs durakları"/>
+  <entry en="Level crossings" text="Hemzemin geçitler"/>
+  <entry en="Sidewalks on urban roads without a sidewalk tag" text="Kaldırım etiketi olmayan kent içi yollarda kaldırımlar"/>
+  <entry en="At a junction without lights, the roads of a lower class (for example residential) give way to the main road." text="Işıksız bir kavşakta, daha düşük sınıftaki yollar (örneğin yerleşim sokakları) ana yola yol verir."/>
+  <entry en="Junction parts nearer than this distance become one junction (dual carriageways)." text="Bu mesafeden daha yakın kavşak parçaları tek bir kavşak olur (bölünmüş yollar)."/>
+  <entry en="Traffic of the sources at the border of the area (100% = rate from the road class and the lanes)." text="Alanın sınırındaki kaynakların trafiği (%100 = yol sınıfından ve şeritlerden gelen oran)."/>
+  <entry en="Join junction parts nearer than" text="Kavşak parçalarını birleştirme mesafesi"/>
+  <entry en="Traffic of the sources" text="Kaynakların trafiği"/>
+  <entry en="Map data © OpenStreetMap contributors (ODbL). The place search uses Nominatim. The Overpass API is a free public service: do not download very large areas many times. The last download is kept for a new import." text="Harita verileri © OpenStreetMap katkıcıları (ODbL). Yer arama Nominatim kullanır. Overpass API ücretsiz bir kamu hizmetidir: çok büyük alanları defalarca indirmeyin. Son indirme yeni bir içe aktarma için saklanır."/>
+  <entry en="Import" text="İçe aktar"/>
+  <entry en="OpenStreetMap file" text="OpenStreetMap dosyası"/>
+  <entry en="Search for &quot;%1&quot;..." text="&quot;%1&quot; aranıyor..."/>
+  <entry en="The place search failed: %1" text="Yer arama başarısız oldu: %1"/>
+  <entry en="No place is found for &quot;%1&quot;." text="&quot;%1&quot; için yer bulunamadı."/>
+  <entry en="Found: %1" text="Bulundu: %1"/>
+  <entry en="Select an existing .osm file." text="Var olan bir .osm dosyası seçin."/>
+  <entry en="Drag: move the map.  Wheel: zoom.  Shift + drag or right drag: draw an area.  Drag the area or its edges: move it or change its size." text="Sürükle: haritayı taşı.  Tekerlek: yakınlaştır.  Shift + sürükle veya sağ sürükle: alan çiz.  Alanı veya kenarlarını sürükle: taşı veya boyutunu değiştir."/>
+  <entry en="The data is not OpenStreetMap XML (the root element &lt;osm&gt; is missing)." text="Veri OpenStreetMap XML değil (&lt;osm&gt; kök öğesi yok)."/>
+  <entry en="The server sent a remark and no roads: %1" text="Sunucu yol yerine bir not gönderdi: %1"/>
+  <entry en="The data has no roads for vehicles (%1 nodes, %2 ways)." text="Veride araçlar için yol yok (%1 düğüm, %2 yol)."/>
+  <entry en="The ways have no nodes in the data." text="Verideki yolların düğümleri yok."/>
+  <entry en="No road is in the area." text="Alanda yol yok."/>
+  <entry en="%1 roads (%2 km), %3 nodes, %4 traffic lights, %5 signs, %6 objects, %7 traffic sources. Data: %8 OSM nodes, %9 ways, %10 roads for vehicles." text="%1 yol (%2 km), %3 düğüm, %4 trafik ışığı, %5 işaret, %6 nesne, %7 trafik kaynağı. Veri: %8 OSM düğümü, %9 OSM yolu, %10 araç yolu."/>
+
+  <!-- ===== Traffic light program ===== -->
+  <entry en="Traffic light %1 - program" text="Trafik ışığı %1 - program"/>
+  <entry en="P%1 %2 s" text="F%1 %2 sn"/>
+  <entry en="P%1" text="F%1"/>
+  <entry en="Start offset (coordination)" text="Başlangıç kayması (koordinasyon)"/>
+  <entry en="Red and yellow before green" text="Yeşilden önce kırmızı-sarı"/>
+  <entry en="Phases (in sequence)" text="Fazlar (sırayla)"/>
+  <entry en="Min green" text="En kısa yeşil"/>
+  <entry en="Max green" text="En uzun yeşil"/>
+  <entry en="Add phase" text="Faz ekle"/>
+  <entry en="Remove phase" text="Fazı kaldır"/>
+  <entry en="Up" text="Yukarı"/>
+  <entry en="Down" text="Aşağı"/>
+  <entry en="Default program" text="Varsayılan program"/>
+  <entry en="Roads with green in the selected phase" text="Seçili fazda yeşil yanan yollar"/>
+  <entry en="%1 (road %2)" text="%1 (yol %2)"/>
+  <entry en="(pedestrians)" text="(yayalar)"/>
+  <entry en="Cycle time: %1 s, %2 phases." text="Devre süresi: %1 sn, %2 faz."/>
+  <entry en="Actuated: the green time is between the minimum and the maximum green, it changes with the waiting vehicles." text="Trafik uyarmalı: yeşil süre en kısa ve en uzun yeşil arasındadır, bekleyen araçlara göre değişir."/>
+  <entry en="External: the phases come from the API. Without data, the light uses the fixed times." text="Harici: fazlar API'den gelir. Veri yoksa ışık sabit süreleri kullanır."/>
+  <entry en="Each phase must have one or more roads with green, or it must be a pedestrian phase." text="Her fazda yeşil yanan en az bir yol olmalı veya faz bir yaya fazı olmalıdır."/>
+
+  <!-- ===== Traffic density ===== -->
+  <entry en="&lt;b&gt;Traffic density&lt;/b&gt; (all workspaces)" text="&lt;b&gt;Trafik yoğunluğu&lt;/b&gt; (tüm çalışma alanları)"/>
+  <entry en="Set the vehicles and the pedestrians to this percent" text="Araçları ve yayaları bu yüzdeye ayarla"/>
+  <entry en="100% = the rates of the traffic sources (node properties).&#10;The change applies immediately to all open workspaces." text="%100 = trafik kaynaklarının oranları (düğüm özellikleri).&#10;Değişiklik tüm açık çalışma alanlarına hemen uygulanır."/>
+
+  <!-- ===== Charts ===== -->
+  <entry en="Charts (select the metrics):" text="Grafikler (ölçütleri seçin):"/>
+  <entry en="Last 10 minutes" text="Son 10 dakika"/>
+  <entry en="Last hour" text="Son saat"/>
+  <entry en="Last 6 hours" text="Son 6 saat"/>
+  <entry en="All data" text="Tüm veriler"/>
+  <entry en="Export PNG..." text="PNG dışa aktar..."/>
+  <entry en="Export SVG..." text="SVG dışa aktar..."/>
+  <entry en="Export CSV..." text="CSV dışa aktar..."/>
+  <entry en="Time window:" text="Zaman aralığı:"/>
+  <entry en="Traffic light (waiting vehicles):" text="Trafik ışığı (bekleyen araçlar):"/>
+  <entry en="(no light chart)" text="(ışık grafiği yok)"/>
+  <entry en="Traffic light %1 (node %2)" text="Trafik ışığı %1 (düğüm %2)"/>
+  <entry en="Waiting vehicles at traffic light %1" text="Trafik ışığı %1: bekleyen araçlar"/>
+  <entry en="Select one or more metrics first." text="Önce bir veya daha fazla ölçüt seçin."/>
+  <entry en="Export the charts" text="Grafikleri dışa aktar"/>
+  <entry en="Traffic Engine charts" text="Traffic Engine grafikleri"/>
+  <entry en="Export the chart data" text="Grafik verilerini dışa aktar"/>
+  <entry en="SVG image (*.svg)" text="SVG resmi (*.svg)"/>
+  <entry en="PNG image (*.png)" text="PNG resmi (*.png)"/>
+  <entry en="CSV file (*.csv)" text="CSV dosyası (*.csv)"/>
+  <entry en="JSON file (*.json)" text="JSON dosyası (*.json)"/>
+  <entry en="No data yet. Start the flow (Space)." text="Henüz veri yok. Akışı başlatın (Boşluk)."/>
+  <entry en="Vehicle density" text="Araç yoğunluğu"/>
+  <entry en="Mean speed" text="Ortalama hız"/>
+  <entry en="Stopped vehicles" text="Duran araçlar"/>
+  <entry en="Stops per vehicle" text="Araç başına duruş"/>
+  <entry en="Mean stop duration" text="Ortalama duruş süresi"/>
+  <entry en="Wait at a junction" text="Kavşakta bekleme"/>
+  <entry en="Wait at traffic lights" text="Trafik ışıklarında bekleme"/>
+  <entry en="Time in congestion" text="Sıkışıklıkta geçen süre"/>
+  <entry en="Distance in congestion" text="Sıkışıklıkta gidilen mesafe"/>
+  <entry en="Mean fuel consumption" text="Ortalama yakıt tüketimi"/>
+  <entry en="Fuel rate (all vehicles)" text="Yakıt tüketim hızı (tüm araçlar)"/>
+  <entry en="CO2 emission rate" text="CO2 salım hızı"/>
+  <entry en="CO2 emission total" text="Toplam CO2 salımı"/>
+  <entry en="Completed trips" text="Tamamlanan yolculuklar"/>
+
+  <!-- ===== Signs ===== -->
+  <entry en="Warning signs (T)" text="Tehlike uyarı işaretleri (T)"/>
+  <entry en="Regulatory signs (TT)" text="Trafik tanzim işaretleri (TT)"/>
+  <entry en="Mandatory signs" text="Mecburiyet işaretleri"/>
+  <entry en="Information signs (B)" text="Bilgi işaretleri (B)"/>
+  <entry en="Parking signs (P)" text="Park işaretleri (P)"/>
+  <entry en="Search (name, Turkish name or code)" text="Ara (ad, Türkçe ad veya kod)"/>
+  <entry en="Click a sign, then click a road side in the world (F4)." text="Bir işarete, sonra dünyada bir yol kenarına tıklayın (F4)."/>
+  <entry en="All signs" text="Tüm işaretler"/>
+  <entry en="&lt;b&gt;%1&lt;/b&gt;&lt;br&gt;Code: %2&lt;br&gt;English: %3&lt;br&gt;Turkish: %4&lt;br&gt;Effect: %5" text="&lt;b&gt;%1&lt;/b&gt;&lt;br&gt;Kod: %2&lt;br&gt;İngilizce: %3&lt;br&gt;Türkçe: %4&lt;br&gt;Etkisi: %5"/>
+  <entry en="not confirmed yet" text="henüz doğrulanmadı"/>
+  <entry en="The file has no signs: %1" text="Dosyada işaret yok: %1"/>
+  <entry en="Information only" text="Yalnızca bilgi"/>
+  <entry en="Maximum speed" text="Azami hız"/>
+  <entry en="End of the speed limit" text="Hız sınırı sonu"/>
+  <entry en="Stop" text="Dur"/>
+  <entry en="Give way" text="Yol ver"/>
+  <entry en="Priority road" text="Ana yol"/>
+  <entry en="End of the priority road" text="Ana yol sonu"/>
+  <entry en="No entry" text="Girilmez"/>
+  <entry en="Road closed" text="Taşıt trafiğine kapalı yol"/>
+  <entry en="No overtaking" text="Sollama yasak"/>
+  <entry en="End of no overtaking" text="Sollama yasağı sonu"/>
+  <entry en="No left turn" text="Sola dönülmez"/>
+  <entry en="No right turn" text="Sağa dönülmez"/>
+  <entry en="No U-turn" text="U dönüşü yapılmaz"/>
+  <entry en="Straight on only" text="Yalnızca ileri"/>
+  <entry en="Left turn only" text="Yalnızca sola"/>
+  <entry en="Right turn only" text="Yalnızca sağa"/>
+  <entry en="End of all prohibitions and limits" text="Bütün yasaklama ve kısıtlamaların sonu"/>
+  <entry en="Straight on or right only" text="İleri veya sağa"/>
+  <entry en="Straight on or left only" text="İleri veya sola"/>
+  <entry en="Left or right only" text="Sola veya sağa"/>
+
+  <!-- ===== Congestion analysis ===== -->
+  <entry en="&amp;Congestion analysis" text="Sıkışıklık &amp;analizi"/>
+  <entry en="Show the congested junctions: level of service, queues and the causes of the waits" text="Sıkışık kavşakları göster: hizmet düzeyi, kuyruklar ve beklemelerin nedenleri"/>
+  <entry en="Congestion" text="Sıkışıklık"/>
+  <entry en="Level of service: %1 (%2 s delay per vehicle)" text="Hizmet düzeyi: %1 (araç başına %2 sn gecikme)"/>
+  <entry en="Flow: %1 veh/h" text="Akım: %1 araç/sa"/>
+  <entry en="Queue now: %1 m (%2 vehicles)" text="Şu anki kuyruk: %1 m (%2 araç)"/>
+  <entry en="Main cause: %1 (%2%)" text="Ana neden: %1 (%%2)"/>
+  <entry en="Spillback: a queue fills its road and blocks the junction before it" text="Taşma: kuyruk yolunu dolduruyor ve önceki kavşağı tıkıyor"/>
+  <entry en="LOS %1  %2 s" text="HD %1  %2 sn"/>
+  <entry en="Level of service:" text="Hizmet düzeyi:"/>
+  <entry en="Queue" text="Kuyruk"/>
+  <entry en="Red light (signal times)" text="Kırmızı ışık (sinyal süreleri)"/>
+  <entry en="Gives way (priority)" text="Yol verme (öncelik)"/>
+  <entry en="Conflicting movements" text="Çakışan hareketler"/>
+  <entry en="Exit full (queue after the junction)" text="Çıkış dolu (kavşaktan sonra kuyruk)"/>
+  <entry en="Junction blocked" text="Kavşak tıkalı"/>
+  <entry en="STOP sign" text="DUR işareti"/>
+  <entry en="Closed lane" text="Kapalı şerit"/>
+  <entry en="Slow traffic" text="Yavaş trafik"/>
+  <entry en="Vehicles that merge" text="Birleşen araçlar"/>
+  <entry en="Lane changes" text="Şerit değiştirme"/>
+  <entry en="Last minute" text="Son dakika"/>
+  <entry en="Last 5 minutes" text="Son 5 dakika"/>
+  <entry en="Last 15 minutes" text="Son 15 dakika"/>
+  <entry en="Only problems (LOS D to F)" text="Yalnızca sorunlar (HD D - F)"/>
+  <entry en="Junction" text="Kavşak"/>
+  <entry en="LOS" text="HD"/>
+  <entry en="Delay" text="Gecikme"/>
+  <entry en="Queue now (maximum)" text="Şu anki kuyruk (en fazla)"/>
+  <entry en="Flow" text="Akım"/>
+  <entry en="Main cause" text="Ana neden"/>
+  <entry en="Level of service A to F (Highway Capacity Manual): from the delay per vehicle" text="Hizmet düzeyi A - F (Highway Capacity Manual): araç başına gecikmeden"/>
+  <entry en="Mean delay per vehicle at the junction (s)" text="Kavşakta araç başına ortalama gecikme (sn)"/>
+  <entry en="The largest part of the waiting time of the vehicles in the queues" text="Kuyruktaki araçların bekleme süresinin en büyük bölümü"/>
+  <entry en="%1 s" text="%1 sn"/>
+  <entry en="%1 veh/h" text="%1 araç/sa"/>
+  <entry en="%1 m (%2 m)" text="%1 m (%2 m)"/>
+  <entry en="(lights)" text="(ışıklı)"/>
+  <entry en="spillback" text="taşma"/>
+  <entry en="from node %1" text="(düğüm %1 kaynaklı)"/>
+  <entry en="No junction with three or more roads or a traffic light." text="Üç veya daha fazla yollu ya da trafik ışıklı kavşak yok."/>
+  <entry en="%1 junctions. No hotspot: all junctions have the level of service A to D." text="%1 kavşak. Sıcak nokta yok: tüm kavşakların hizmet düzeyi A - D."/>
+  <entry en="%1 junctions. Hotspots (LOS E or F): %2, spillbacks: %3. The worst: %4 (LOS %5, %6 s per vehicle, %7)." text="%1 kavşak. Sıcak noktalar (HD E veya F): %2, taşmalar: %3. En kötüsü: %4 (HD %5, araç başına %6 sn, %7)."/>
+  <entry en="Export the congestion data" text="Sıkışıklık verilerini dışa aktar"/>
+
+  <!-- ===== Vehicles and workspaces ===== -->
+  <entry en="Sedan" text="Otomobil"/>
+  <entry en="Bus" text="Otobüs"/>
+  <entry en="Motorcycle" text="Motosiklet"/>
+  <entry en="Pedestrian" text="Yaya"/>
+  <entry en="New workspace %1" text="Yeni çalışma alanı %1"/>
+  <entry en="Demo city" text="Örnek şehir"/>
+  <entry en="Ataturk Avenue" text="Atatürk Bulvarı"/>
+  <entry en="Cumhuriyet Street" text="Cumhuriyet Caddesi"/>
+  <entry en="School Street" text="Okul Sokağı"/>
+  <entry en="Station Road" text="İstasyon Yolu"/>
+  <entry en="Market" text="Çarşı"/>
+  <entry en="A sample city: crossroad with traffic lights, T-junction with a STOP sign, level crossing and bus stop." text="Örnek şehir: trafik ışıklı dört yol ağzı, DUR işaretli T kavşak, hemzemin geçit ve otobüs durağı."/>
+
+  <!-- ===== Errors of the files and the network (tx_message) ===== -->
+  <entry en="%1 is not a Traffic Engine workspace file." text="%1 bir Traffic Engine çalışma alanı dosyası değil."/>
+  <entry en="Cannot open the file %1: %2" text="%1 dosyası açılamıyor: %2"/>
+  <entry en="Cannot save the file %1: %2" text="%1 dosyası kaydedilemiyor: %2"/>
+  <entry en="Cannot write the XML document." text="XML belgesi yazılamıyor."/>
+  <entry en="XML error in %1: %2" text="XML hatası (%1): %2"/>
+  <entry en="XML error in %1: the document has no root element" text="XML hatası (%1): belgede kök öğe yok"/>
+  <entry en="%1 (error %2)" text="%1 (hata %2)"/>
+  <entry en="Network error" text="Ağ hatası"/>
+  <entry en="Incorrect address: %1" text="Hatalı adres: %1"/>
+  <entry en="The answer is too large (more than %1 MB)." text="Yanıt çok büyük (%1 MB'tan fazla)."/>
+  <entry en="cancelled" text="iptal edildi"/>
+
+</language>

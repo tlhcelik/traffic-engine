@@ -1,0 +1,28 @@
+# Build output (CMake). The .keep files keep the empty folders in git.
+build/Debug/*
+build/Release/*
+!build/Debug/.keep
+!build/Release/.keep
+
+# bin is filled by each build (symbolic links + windeployqt files).
+bin/*
+!bin/.keep
+
+# Release packages
+deploy/
+installer/Output/*
+!installer/Output/.keep
+
+# Third-party components. build/setup_cots.ps1 collects them again on each computer.
+cots/*
+!cots/README.md
+
+# IDE and user files
+*.user
+*.autosave
+.vs/
+.vscode/
+config.xml
+
+# Log of aqtinstall (Qt download in setup_cots.ps1)
+aqtinstall.log

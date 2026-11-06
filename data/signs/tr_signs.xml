@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Traffic sign catalog of Turkey for Traffic Engine (Xerces-C reads this file).
+
+  key       Stable internal name. The .te files store the key. Do not change a key.
+  code      Official code (KGM, Trafik İşaretleri El Kitabı). Sources of this version: the list of the
+            signs of Turkey on Wikipedia (English and Turkish), with the official codes of the sign files.
+  name      STE English name. name_tr: official Turkish name.
+  category  warning (T), regulatory (TT, prohibition), mandatory (TT, blue), information (B), parking (P)
+  shape     triangle, triangle_down, circle, octagon, square, rect, diamond, board (tall marker),
+            board_wide (bend marker), saltire (level crossing cross)
+  symbol    the drawing inside the sign (see src/sign_painter.cpp)
+  text      text of the symbols text / letter, or the value text of a limit sign (for example "3.5 m")
+  mirror    true: the pictogram is mirrored (left / right variants)
+  slash     true: a red diagonal bar ("end of ...")
+  panel     true: a white panel in a blue service sign
+  effect    the change in the traffic: speed_limit, end_speed_limit, stop, yield, priority_road,
+            end_priority_road, no_entry, road_closed, no_overtaking, end_no_overtaking, no_left,
+            no_right, no_uturn, only_straight, only_left, only_right, straight_or_right,
+            straight_or_left, left_or_right, end_all (empty = information only)
+  value     default value (speed in km/h)
+
+  Not in the list: direction and location panels (B-5 .. B-13, B-54), supplementary plates (PL),
+  road works signs (YB) and the variants that differ only in the text of a panel.
+-->
+<sign_catalog country="TR" version="2">
+
+  <!-- Warning signs (Tehlike uyarı işaretleri, T) -->
+  <sign key="bend_right" code="T-1a" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="bend_right" name="Dangerous bend to the right" name_tr="Sağa tehlikeli viraj"/>
+  <sign key="bend_left" code="T-1b" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="bend_left" name="Dangerous bend to the left" name_tr="Sola tehlikeli viraj"/>
+  <sign key="double_bend" code="T-2a" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="double_bend" name="Dangerous bends, the first to the right" name_tr="Sağa tehlikeli devamlı virajlar"/>
+  <sign key="double_bend_left" code="T-2b" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="double_bend" mirror="true" name="Dangerous bends, the first to the left" name_tr="Sola tehlikeli devamlı virajlar"/>
+  <sign key="steep_descent" code="T-3a" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="slope_down" text="%10" name="Steep descent" name_tr="Tehlikeli eğim (iniş)"/>
+  <sign key="steep_ascent" code="T-3b" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="slope_up" text="%10" name="Steep ascent" name_tr="Tehlikeli eğim (çıkış)"/>
+  <sign key="narrows_both" code="T-4a" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="narrows_both" name="Road narrows on both sides" name_tr="Her iki taraftan daralan kaplama"/>
+  <sign key="narrows_right" code="T-4b" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="narrows_right" name="Road narrows on the right" name_tr="Sağdan daralan kaplama"/>
+  <sign key="narrows_left" code="T-4c" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="narrows_left" name="Road narrows on the left" name_tr="Soldan daralan kaplama"/>
+  <sign key="opening_bridge" code="T-5" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="bridge" name="Opening bridge" name_tr="Açılan köprü"/>
+  <sign key="quayside" code="T-6" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="quay" name="Road ends at a sea or river bank" name_tr="Deniz veya nehir kıyısında biten yol"/>
+  <sign key="hump" code="T-7" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="hump" name="Uneven road" name_tr="Kasisli yol"/>
+  <sign key="slippery" code="T-8" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="slippery" name="Slippery road" name_tr="Kaygan yol"/>
+  <sign key="loose_gravel" code="T-9" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="gravel" name="Loose gravel" name_tr="Gevşek malzemeli zemin"/>
+  <sign key="falling_rocks" code="T-10" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="rocks" name="Falling rocks" name_tr="Gevşek şev"/>
+  <sign key="pedestrian_crossing_ahead" code="T-11" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="pedestrian_zebra" name="Pedestrian crossing" name_tr="Yaya geçidi"/>
+  <sign key="children" code="T-12" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="children" name="School crossing" name_tr="Okul geçidi"/>
+  <sign key="cyclists" code="T-13" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="bicycle" name="Cyclists can cross" name_tr="Bisiklet geçebilir"/>
+  <sign key="cattle" code="T-14a" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="cow" name="Domestic animals can cross" name_tr="Ehli hayvanlar geçebilir"/>
+  <sign key="wild_animals" code="T-14b" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="deer" name="Wild animals can cross" name_tr="Vahşi hayvanlar geçebilir"/>
+  <sign key="road_works" code="T-15" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="works" name="Road works" name_tr="Yolda çalışma"/>
+  <sign key="signals_ahead" code="T-16" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="signals" name="Traffic lights" name_tr="Işıklı işaret cihazı"/>
+  <sign key="low_aircraft" code="T-17" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="plane" name="Low-flying aircraft (airport)" name_tr="Havalimanı (alçak uçuş)"/>
+  <sign key="crosswind" code="T-18" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="wind" name="Side wind" name_tr="Yandan rüzgar"/>
+  <sign key="two_way_traffic" code="T-19" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="two_way" name="Two-way traffic" name_tr="İki yönlü trafik"/>
+  <sign key="danger" code="T-20" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="exclamation" name="Danger" name_tr="Dikkat"/>
+  <sign key="crossroads" code="T-21" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="cross" name="Junction without control" name_tr="Kontrolsüz kavşak"/>
+  <sign key="junction_priority" code="T-22a" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="cross_priority" name="Junction with minor roads" name_tr="Ana yol-Tali yol kavşağı"/>
+  <sign key="side_road_right" code="T-22b" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="side_right" name="Minor road from the right" name_tr="Ana yol-Tali yol kavşağı (sağdan)"/>
+  <sign key="side_road_left" code="T-22c" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="side_right" mirror="true" name="Minor road from the left" name_tr="Ana yol-Tali yol kavşağı (soldan)"/>
+  <sign key="side_road_right_acute" code="T-22d" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="side_right_acute" name="Minor road from the right at an acute angle" name_tr="Ana yol-Tali yol kavşağı"/>
+  <sign key="side_road_left_acute" code="T-22e" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="side_right_acute" mirror="true" name="Minor road from the left at an acute angle" name_tr="Ana yol-Tali yol kavşağı"/>
+  <sign key="merge_right" code="T-23a" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="merge_right" name="Traffic joins from the right" name_tr="Sağdan ana yola giriş"/>
+  <sign key="merge_left" code="T-23b" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="merge_right" mirror="true" name="Traffic joins from the left" name_tr="Soldan ana yola giriş"/>
+  <sign key="roundabout_ahead" code="T-24" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="roundabout" name="Roundabout" name_tr="Dönel kavşak"/>
+  <sign key="level_crossing_barrier" code="T-25" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="fence" name="Level crossing with barriers" name_tr="Kontrollü demiryolu geçidi"/>
+  <sign key="level_crossing_open" code="T-26" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="train" name="Level crossing without barriers" name_tr="Kontrolsüz demiryolu geçidi"/>
+  <sign key="rail_cross_single" code="T-27a" category="warning" shape="saltire" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="none" name="Level crossing, one track" name_tr="Kontrolsüz demiryolu geçidi (tek hat)"/>
+  <sign key="rail_cross_double" code="T-27b" category="warning" shape="saltire" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="saltire2" name="Level crossing, two or more tracks" name_tr="Kontrolsüz demiryolu geçidi (çift hat)"/>
+  <sign key="rail_approach_300" code="T-28a" category="warning" shape="board" bg="#FFFFFF" border="#3D4A5C" fg="#141414" symbol="stripes3" name="Level crossing in 300 m" name_tr="Demiryolu hemzemin geçit yaklaşımı (300 m)"/>
+  <sign key="rail_approach_200" code="T-29a" category="warning" shape="board" bg="#FFFFFF" border="#3D4A5C" fg="#141414" symbol="stripes2" name="Level crossing in 200 m" name_tr="Demiryolu hemzemin geçit yaklaşımı (200 m)"/>
+  <sign key="rail_approach_100" code="T-30a" category="warning" shape="board" bg="#FFFFFF" border="#3D4A5C" fg="#141414" symbol="stripes1" name="Level crossing in 100 m" name_tr="Demiryolu hemzemin geçit yaklaşımı (100 m)"/>
+  <sign key="bridge_head" code="T-31a" category="warning" shape="board" bg="#FFFFFF" border="#3D4A5C" fg="#141414" symbol="hazard_black" name="Bridge end marker" name_tr="Köprü başı levhası"/>
+  <sign key="obstacle" code="T-32" category="warning" shape="board" bg="#FFFFFF" border="#3D4A5C" fg="#141414" symbol="hazard_red" name="Obstacle" name_tr="Engel işareti"/>
+  <sign key="curve_marker_right" code="T-33a" category="warning" shape="board_wide" bg="#D62828" border="#D62828" fg="#FFFFFF" symbol="chevron" name="Bend direction marker (right)" name_tr="Tehlikeli viraj yön levhası"/>
+  <sign key="curve_marker_left" code="T-33b" category="warning" shape="board_wide" bg="#D62828" border="#D62828" fg="#FFFFFF" symbol="chevron" mirror="true" name="Bend direction marker (left)" name_tr="Tehlikeli viraj yön levhası"/>
+  <sign key="works_approach" code="T-33d" category="warning" shape="board" bg="#FFFFFF" border="#3D4A5C" fg="#141414" symbol="hazard_yellow" name="Road works approach marker" name_tr="Onarım yaklaşım levhası"/>
+  <sign key="median_head" code="T-34a" category="warning" shape="board" bg="#FFFFFF" border="#3D4A5C" fg="#141414" symbol="hazard_black" mirror="true" name="Median end marker" name_tr="Refüj başı ek levhası"/>
+  <sign key="turn_island" code="T-35" category="warning" shape="board" bg="#FFFFFF" border="#3D4A5C" fg="#141414" symbol="island_board" name="Turn island marker" name_tr="Dönüş adası ek levhası"/>
+  <sign key="soft_verge" code="T-36" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="soft_verge" name="Low verge" name_tr="Düşük banket"/>
+  <sign key="ice" code="T-37" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="snowflake" name="Ice on the road" name_tr="Gizli buzlanma"/>
+  <sign key="queue" code="T-38" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="queue" name="Traffic queues are possible" name_tr="Olası trafik sıkışıklığı"/>
+  <sign key="tram_crossing" code="T-39" category="warning" shape="triangle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="tram" name="Junction with a tram line" name_tr="Tramvay hattı ile oluşan kavşak"/>
+
+  <!-- Regulatory signs: priority and prohibition (Trafik tanzim işaretleri, TT) -->
+  <sign key="give_way" code="TT-1" category="regulatory" shape="triangle_down" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="none" effect="yield" name="Give way" name_tr="Yol ver"/>
+  <sign key="stop" code="TT-2" category="regulatory" shape="octagon" bg="#D62828" border="#D62828" fg="#FFFFFF" symbol="text" text="DUR" effect="stop" name="Stop" name_tr="Dur"/>
+  <sign key="give_way_oncoming" code="TT-3" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="oncoming" name="Give way to the oncoming traffic" name_tr="Karşıdan gelene yol ver"/>
+  <sign key="no_entry" code="TT-4" category="regulatory" shape="circle" bg="#D62828" border="#D62828" fg="#FFFFFF" symbol="bar" effect="no_entry" name="No entry" name_tr="Girişi olmayan yol"/>
+  <sign key="closed_to_vehicles" code="TT-5" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="none" effect="road_closed" name="Closed to all vehicles" name_tr="Taşıt trafiğine kapalı yol"/>
+  <sign key="no_cars" code="TT-6" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="car_side" name="No cars" name_tr="Araba giremez"/>
+  <sign key="no_motorcycles" code="TT-7" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="motorcycle" name="No motorcycles" name_tr="Motosiklet giremez"/>
+  <sign key="no_bicycles" code="TT-8" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="bicycle" name="No bicycles" name_tr="Bisiklet giremez"/>
+  <sign key="no_mopeds" code="TT-9" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="moped" name="No mopeds" name_tr="Motorlu bisiklet giremez"/>
+  <sign key="no_trucks" code="TT-10a" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="truck" name="No trucks" name_tr="Kamyon giremez"/>
+  <sign key="no_buses" code="TT-10b" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="bus_side" name="No buses" name_tr="Otobüs giremez"/>
+  <sign key="no_trailers" code="TT-11" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="trailer" name="No trailers" name_tr="Treyler giremez"/>
+  <sign key="no_pedestrians" code="TT-12" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="pedestrian" name="No pedestrians" name_tr="Yaya giremez"/>
+  <sign key="no_animal_carts" code="TT-13" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="cart" name="No animal-drawn vehicles" name_tr="At arabası giremez"/>
+  <sign key="no_handcarts" code="TT-14" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="handcart" name="No handcarts" name_tr="El arabası giremez"/>
+  <sign key="no_tractors" code="TT-15" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="tractor" name="No tractors" name_tr="Traktör giremez"/>
+  <sign key="no_explosives" code="TT-16a" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="explosive" name="No vehicles with explosive or flammable goods" name_tr="Patlayıcı ve parlayıcı madde taşıyan taşıt giremez"/>
+  <sign key="no_dangerous_goods" code="TT-16b" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="dangerous" name="No vehicles with dangerous goods" name_tr="Tehlikeli madde taşıyan taşıt giremez"/>
+  <sign key="no_water_pollutants" code="TT-17" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="water_pollution" name="No vehicles with goods that pollute water" name_tr="Su kirletici madde taşıyan taşıt giremez"/>
+  <sign key="no_motor_vehicles" code="TT-18" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="car_moto" effect="road_closed" name="No motor vehicles" name_tr="Motorlu taşıt giremez"/>
+  <sign key="no_vehicles" code="TT-19" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="car_cart" effect="road_closed" name="No vehicles" name_tr="Taşıt giremez"/>
+  <sign key="max_width" code="TT-20" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="width" text="2.3 m" name="Maximum width of the vehicles" name_tr="Genişliği ... metreden fazla olan taşıt giremez"/>
+  <sign key="max_height" code="TT-21" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="height" text="3.5 m" name="Maximum height of the vehicles" name_tr="Yüksekliği ... metreden fazla olan taşıt giremez"/>
+  <sign key="max_length" code="TT-22" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="length" text="10 m" name="Maximum length of the vehicles" name_tr="Uzunluğu ... metreden fazla olan taşıt giremez"/>
+  <sign key="max_axle_load" code="TT-23" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="axle" text="8 t" name="Maximum load on one axle" name_tr="Dingil başına ... tondan fazla yük düşen taşıt giremez"/>
+  <sign key="max_weight" code="TT-24" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="text" text="15 t" name="Maximum weight of the vehicles" name_tr="Yüklü ağırlığı ... tondan fazla olan taşıt giremez"/>
+  <sign key="min_distance" code="TT-25" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="distance" text="70 m" name="Minimum distance to the vehicle ahead" name_tr="Öndeki taşıt ... metreden daha yakın takip edilemez"/>
+  <sign key="no_right_turn" code="TT-26a" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="ban_right" effect="no_right" name="No right turn" name_tr="Sağa dönülemez"/>
+  <sign key="no_left_turn" code="TT-26b" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="ban_left" effect="no_left" name="No left turn" name_tr="Sola dönülemez"/>
+  <sign key="no_u_turn" code="TT-26c" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="ban_uturn" effect="no_uturn" name="No U-turn" name_tr="U dönüşü yapılamaz"/>
+  <sign key="no_overtaking" code="TT-27" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="two_cars" effect="no_overtaking" name="No overtaking" name_tr="Öndeki taşıtı geçmek yasaktır"/>
+  <sign key="no_overtaking_trucks" code="TT-28" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="truck_car" name="No overtaking for trucks" name_tr="Kamyonlar için öndeki taşıtı geçmek yasaktır"/>
+  <sign key="speed_limit" code="TT-29a" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="value" value="50" effect="speed_limit" name="Maximum speed" name_tr="Azami hız sınırlaması"/>
+  <sign key="school_speed_limit" code="TT-29b" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="value_school" value="30" effect="speed_limit" name="Maximum speed in a school zone" name_tr="Okul bölgesi azami hız sınırı"/>
+  <sign key="no_horn" code="TT-30" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="horn" name="No horn" name_tr="Sesli ikaz cihazlarının kullanımı yasaktır"/>
+  <sign key="customs" code="TT-31" category="regulatory" shape="circle" bg="#FFFFFF" border="#D62828" fg="#141414" symbol="text" text="GÜMRÜK" name="Customs" name_tr="Gümrük"/>
+  <sign key="end_all_restrictions" code="TT-32" category="regulatory" shape="circle" bg="#FFFFFF" border="#9AA3AE" fg="#141414" symbol="end" effect="end_all" name="End of all prohibitions and limits" name_tr="Bütün yasaklama ve kısıtlamaların sonu"/>
+  <sign key="end_speed_limit" code="TT-33a" category="regulatory" shape="circle" bg="#FFFFFF" border="#9AA3AE" fg="#141414" symbol="end_value" value="50" effect="end_speed_limit" name="End of the speed limit" name_tr="Hız sınırlaması sonu"/>
+  <sign key="end_speed_zone" code="TT-33b" category="regulatory" shape="circle" bg="#FFFFFF" border="#9AA3AE" fg="#141414" symbol="end_value" value="30" effect="end_speed_limit" name="End of the speed limit zone" name_tr="Azami hız bölgesi sonu"/>
+  <sign key="end_no_overtaking" code="TT-34a" category="regulatory" shape="circle" bg="#FFFFFF" border="#9AA3AE" fg="#141414" symbol="end_two_cars" effect="end_no_overtaking" name="End of no overtaking" name_tr="Geçme yasağı sonu"/>
+  <sign key="end_no_overtaking_trucks" code="TT-34b" category="regulatory" shape="circle" bg="#FFFFFF" border="#9AA3AE" fg="#141414" symbol="end_truck_car" name="End of no overtaking for trucks" name_tr="Kamyonlar için geçme yasağı sonu"/>
+
+  <!-- Regulatory signs: mandatory (blue, TT-35 .. TT-45) -->
+  <sign key="only_right" code="TT-35a" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="arrow_right_h" effect="only_right" name="Turn right" name_tr="Sağa mecburi yön"/>
+  <sign key="only_left" code="TT-35b" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="arrow_right_h" mirror="true" effect="only_left" name="Turn left" name_tr="Sola mecburi yön"/>
+  <sign key="only_straight" code="TT-35c" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="arrow_up" effect="only_straight" name="Go straight on" name_tr="İleri mecburi yön"/>
+  <sign key="straight_or_right" code="TT-35d" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="arrow_up_right" effect="straight_or_right" name="Go straight on or turn right" name_tr="İleri ve sağa mecburi yön"/>
+  <sign key="straight_or_left" code="TT-35e" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="arrow_up_right" mirror="true" effect="straight_or_left" name="Go straight on or turn left" name_tr="İleri ve sola mecburi yön"/>
+  <sign key="left_or_right" code="TT-35f" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="arrow_left_right" effect="left_or_right" name="Turn left or right" name_tr="Sağa ve sola mecburi yön"/>
+  <sign key="turn_right_ahead" code="TT-35g" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="arrow_right" effect="only_right" name="Turn right ahead" name_tr="İleriden sağa mecburi yön"/>
+  <sign key="turn_left_ahead" code="TT-35h" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="arrow_left" effect="only_left" name="Turn left ahead" name_tr="İleriden sola mecburi yön"/>
+  <sign key="keep_right" code="TT-36a" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="keep_right" name="Keep right" name_tr="Sağdan gidiniz"/>
+  <sign key="keep_left" code="TT-36b" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="keep_right" mirror="true" name="Keep left" name_tr="Soldan gidiniz"/>
+  <sign key="pass_either_side" code="TT-36c" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="either_side" name="Pass on the left or on the right" name_tr="Her iki yandan gidiniz"/>
+  <sign key="roundabout" code="TT-37" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="roundabout" name="Roundabout" name_tr="Ada etrafında dönünüz"/>
+  <sign key="bicycle_path" code="TT-38a" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="bicycle" name="Bicycle path" name_tr="Mecburi bisiklet yolu"/>
+  <sign key="end_bicycle_path" code="TT-38b" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="bicycle" slash="true" name="End of the bicycle path" name_tr="Mecburi bisiklet yolu sonu"/>
+  <sign key="pedestrian_path" code="TT-39a" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="pedestrian" name="Pedestrian path" name_tr="Mecburi yaya yolu"/>
+  <sign key="end_pedestrian_path" code="TT-39b" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="pedestrian" slash="true" name="End of the pedestrian path" name_tr="Mecburi yaya yolu sonu"/>
+  <sign key="bridle_path" code="TT-40a" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="horse" name="Path for horse riders" name_tr="Mecburi atlı yolu"/>
+  <sign key="end_bridle_path" code="TT-40b" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="horse" slash="true" name="End of the path for horse riders" name_tr="Mecburi atlı yolu sonu"/>
+  <sign key="min_speed" code="TT-41a" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="value" value="30" name="Minimum speed" name_tr="Mecburi asgari hız"/>
+  <sign key="end_min_speed" code="TT-41b" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="value" value="30" slash="true" name="End of the minimum speed" name_tr="Mecburi asgari hız sonu"/>
+  <sign key="snow_chains" code="TT-42a" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="chains" name="Snow chains are necessary" name_tr="Zincir takmak mecburidir"/>
+  <sign key="end_snow_chains" code="TT-42b" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="chains" slash="true" name="End of the snow chain rule" name_tr="Zincir takmak mecburiyeti sonu"/>
+  <sign key="dangerous_goods_left" code="TT-43a" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="adr_left" name="Direction for vehicles with dangerous goods (left)" name_tr="Tehlikeli madde taşıyan taşıtların izleyecekleri mecburi yön"/>
+  <sign key="dangerous_goods_straight" code="TT-43b" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="adr_up" name="Direction for vehicles with dangerous goods (straight on)" name_tr="Tehlikeli madde taşıyan taşıtların izleyecekleri mecburi yön"/>
+  <sign key="dangerous_goods_right" code="TT-43c" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="adr_left" mirror="true" name="Direction for vehicles with dangerous goods (right)" name_tr="Tehlikeli madde taşıyan taşıtların izleyecekleri mecburi yön"/>
+  <sign key="shared_ped_bike" code="TT-44a" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="ped_bike_shared" name="Path for pedestrians and cyclists" name_tr="Yayalar ve bisikletliler tarafından kullanılabilen yol"/>
+  <sign key="end_shared_ped_bike" code="TT-44b" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="ped_bike_shared" slash="true" name="End of the path for pedestrians and cyclists" name_tr="Yayalar ve bisikletliler tarafından kullanılabilen yolun sonu"/>
+  <sign key="split_ped_bike" code="TT-45a" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="ped_bike_split" name="Separate paths for pedestrians and cyclists" name_tr="Yayalar ve bisikletliler için ayrı ayrı kullanılabilen yol"/>
+  <sign key="end_split_ped_bike" code="TT-45b" category="mandatory" shape="circle" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="ped_bike_split" slash="true" name="End of the separate paths for pedestrians and cyclists" name_tr="Yayalar ve bisikletliler için ayrı ayrı kullanılabilen yolun sonu"/>
+
+  <!-- Information signs (Bilgi işaretleri, B) -->
+  <sign key="dead_end_right" code="B-2a" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="dead_end_side" name="Junction with a road without exit (right)" name_tr="Girişi olmayan yol kavşağı"/>
+  <sign key="dead_end_left" code="B-2b" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="dead_end_side" mirror="true" name="Junction with a road without exit (left)" name_tr="Girişi olmayan yol kavşağı"/>
+  <sign key="indirect_left" code="B-3" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="indirect_left" name="Left turn through the next junctions" name_tr="İleriki kavşakta sola dönüş yasağını gösteren işaret levhası"/>
+  <sign key="lane_choice" code="B-4" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="lanes" name="Lane choice before the junction" name_tr="Kavşak öncesi şerit seçimi levhası"/>
+  <sign key="speed_limits_tr" code="B-8c" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="speed_panel" name="Speed limits of Turkey" name_tr="Türkiye hız sınırları levhası"/>
+  <sign key="pedestrian_crossing" code="B-14a" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="info_pedestrian" name="Pedestrian crossing" name_tr="Yaya geçidi"/>
+  <sign key="school_crossing" code="B-14b" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="info_children" name="School crossing" name_tr="Okul geçidi"/>
+  <sign key="pedestrian_zone" code="B-14c" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="ped_zone" name="Pedestrian zone" name_tr="Yaya bölgesi"/>
+  <sign key="hospital" code="B-15" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="letter" text="H" name="Hospital" name_tr="Hastane"/>
+  <sign key="one_way" code="B-16a" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="one_way" name="One-way road" name_tr="Tek yön"/>
+  <sign key="one_way_ahead" code="B-16b" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="arrow_right_h" name="One-way road (to the side)" name_tr="İleri tek yön"/>
+  <sign key="dead_end" code="B-17" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="dead_end" name="Dead end ahead" name_tr="İleri çıkmaz yol"/>
+  <sign key="motorway" code="B-18" category="information" shape="square" bg="#2E8B57" border="#2E8B57" fg="#FFFFFF" symbol="motorway" name="Start of the motorway" name_tr="Otoyol başlangıcı"/>
+  <sign key="end_motorway" code="B-19" category="information" shape="square" bg="#2E8B57" border="#2E8B57" fg="#FFFFFF" symbol="motorway" slash="true" name="End of the motorway" name_tr="Otoyol sonu"/>
+  <sign key="motor_road" code="B-20" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="car_front" name="Start of the road for motor vehicles" name_tr="Motorlu taşıt yolu başlangıcı"/>
+  <sign key="end_motor_road" code="B-21" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="car_front" slash="true" name="End of the road for motor vehicles" name_tr="Motorlu taşıt yolu sonu"/>
+  <sign key="bus_stop_sign" code="B-22" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="bus" name="Bus stop" name_tr="Durak"/>
+  <sign key="first_aid" code="B-23" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="first_aid" panel="true" name="First aid" name_tr="İlk yardım"/>
+  <sign key="repair" code="B-24" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="wrench" panel="true" name="Repair shop" name_tr="Tamirhane"/>
+  <sign key="telephone" code="B-25" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="phone" panel="true" name="Telephone" name_tr="Telefon"/>
+  <sign key="fuel" code="B-26" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="fuel" panel="true" name="Fuel station" name_tr="Akaryakıt istasyonu"/>
+  <sign key="hotel" code="B-27" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="bed" panel="true" name="Hotel or motel" name_tr="Otel veya motel"/>
+  <sign key="restaurant" code="B-28" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="fork_knife" panel="true" name="Restaurant" name_tr="Lokanta"/>
+  <sign key="cafe" code="B-29" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="cup" panel="true" name="Tea house or cafeteria" name_tr="Çayhane veya kafeterya"/>
+  <sign key="fountain" code="B-30" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="faucet" panel="true" name="Drinking water" name_tr="Çeşme"/>
+  <sign key="picnic" code="B-31" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="picnic" panel="true" name="Picnic area" name_tr="Piknik yeri"/>
+  <sign key="hiking" code="B-32" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="hiker" panel="true" name="Start of a walking path" name_tr="Yürüyüş başlangıcı"/>
+  <sign key="camping" code="B-33" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="tent" panel="true" name="Camping area" name_tr="Kamp yeri"/>
+  <sign key="caravan" code="B-34" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="caravan" panel="true" name="Caravan area" name_tr="Karavanlı kamp yeri"/>
+  <sign key="camping_caravan" code="B-35" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="tent_caravan" panel="true" name="Tent and caravan area" name_tr="Çadırlı ve karavanlı kamp yeri"/>
+  <sign key="youth_camp" code="B-36" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="hostel" panel="true" name="Youth camp" name_tr="Gençlik kampı"/>
+  <sign key="priority_over_oncoming" code="B-37" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="priority_oncoming" name="Priority over the oncoming traffic" name_tr="Önceliği olan yol"/>
+  <sign key="priority_road" code="B-38" category="information" shape="diamond" bg="#FFFFFF" border="#FFFFFF" fg="#141414" symbol="priority" effect="priority_road" name="Main road" name_tr="Anayol"/>
+  <sign key="end_priority_road" code="B-39" category="information" shape="diamond" bg="#FFFFFF" border="#FFFFFF" fg="#141414" symbol="end_priority" effect="end_priority_road" name="End of the main road" name_tr="Anayol sonu"/>
+  <sign key="gendarmerie" code="B-40" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="text" text="JANDARMA" panel="true" name="Gendarmerie" name_tr="Jandarma"/>
+  <sign key="police" code="B-41" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="text" text="POLİS" panel="true" name="Police" name_tr="Polis"/>
+  <sign key="fire_danger" code="B-42" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="flame" panel="true" name="Fire danger" name_tr="Yangın tehlikesi"/>
+  <sign key="traffic_radio" code="B-43" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="text" text="FM" panel="true" name="Traffic radio" name_tr="Radyo"/>
+  <sign key="tourist_info" code="B-44" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="letter" text="i" panel="true" name="Tourist information" name_tr="Turizm danışma"/>
+  <sign key="underpass" code="B-45a" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="underpass" panel="true" name="Pedestrian underpass" name_tr="Alt geçit"/>
+  <sign key="overpass" code="B-45b" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="overpass" panel="true" name="Pedestrian overpass" name_tr="Üst geçit"/>
+  <sign key="swimming" code="B-46" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="swimmer" panel="true" name="Swimming area" name_tr="Yüzme yeri"/>
+  <sign key="no_swimming" code="B-47" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="swimmer" panel="true" slash="true" name="No swimming" name_tr="Yüzülmez"/>
+  <sign key="tunnel" code="B-49a" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="tunnel" name="Tunnel" name_tr="Tünel"/>
+  <sign key="underwater_tunnel" code="B-49b" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="tunnel_water" name="Tunnel under water" name_tr="Su altı tüneli"/>
+  <sign key="two_way_road" code="B-52a" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="two_way_info" name="Two-way road" name_tr="İki yönlü yol"/>
+  <sign key="u_turn_place" code="B-53a" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="uturn_info" name="U-turn place" name_tr="U dönüşü levhası"/>
+  <sign key="escape_lane_right" code="B-55a" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="escape" name="Escape lane (right)" name_tr="Kaçış rampası (sağ)"/>
+  <sign key="escape_lane_left" code="B-55b" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="escape" mirror="true" name="Escape lane (left)" name_tr="Kaçış rampası (sol)"/>
+  <sign key="pedestrian_priority" code="B-56" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="living" name="Road with priority for pedestrians" name_tr="Yaya öncelikli yol"/>
+  <sign key="end_pedestrian_priority" code="B-57" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="living" slash="true" name="End of the road with priority for pedestrians" name_tr="Yaya öncelikli yolun sonu"/>
+  <sign key="station" code="B-58a" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="train_info" panel="true" name="Railway station" name_tr="İstasyon"/>
+  <sign key="bus_terminal" code="B-58b" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="bus_side" panel="true" name="Bus terminal" name_tr="Otogar"/>
+  <sign key="tram_stop" code="B-59" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#141414" symbol="tram" panel="true" name="Tram stop" name_tr="Tramvay durağı"/>
+  <sign key="speed_camera" code="B-61a" category="information" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="camera" name="Electronic speed control" name_tr="Elektronik Denetleme Sistemi (EDS)"/>
+
+  <!-- Stop and parking signs (Durma ve park etme işaretleri, P) -->
+  <sign key="no_parking" code="P-1" category="parking" shape="circle" bg="#1D5FA8" border="#D62828" fg="#FFFFFF" symbol="no_parking" name="No parking" name_tr="Park etmek yasaktır"/>
+  <sign key="no_stopping" code="P-2" category="parking" shape="circle" bg="#1D5FA8" border="#D62828" fg="#FFFFFF" symbol="no_stopping" name="No stopping and no parking" name_tr="Duraklamak ve park etmek yasaktır"/>
+  <sign key="parking" code="P-3a" category="parking" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="letter" text="P" name="Parking area" name_tr="Park yeri"/>
+  <sign key="parking_sidewalk" code="P-3b" category="parking" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="park_sidewalk" name="Parking on the sidewalk" name_tr="Park yeri"/>
+  <sign key="parking_half_sidewalk" code="P-3c" category="parking" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="park_half" name="Parking half on the sidewalk" name_tr="Park yeri"/>
+  <sign key="parking_garage" code="P-3f" category="parking" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="park_garage" name="Covered parking" name_tr="Kapalı park yeri"/>
+  <sign key="park_ride_metro" code="P-3g" category="parking" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="park_metro" name="Park and ride (metro)" name_tr="Park yeri (Metro)"/>
+  <sign key="park_ride_tram" code="P-3h" category="parking" shape="square" bg="#1D5FA8" border="#1D5FA8" fg="#FFFFFF" symbol="park_tram" name="Park and ride (tram)" name_tr="Park yeri (tramvay)"/>
+
+</sign_catalog>

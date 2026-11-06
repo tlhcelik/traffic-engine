@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Traffic Engine - traffic simulation on real roads</title>
+<meta name="description" content="Traffic Engine is a 2D traffic simulator for Windows. It imports roads from OpenStreetMap, simulates the traffic and shows the junctions with congestion.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#16294a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Traffic Engine">
+<meta property="og:description" content="Simulate the traffic on the roads of your city. Find the junctions with congestion and the causes of the waits.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="stylesheet" href="assets/css/site.css?v=1">
+<script src="assets/js/site.js?v=1" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Go to the content</a>
+
+<header class="nav">
+	<div class="wrap nav-row">
+		<a class="brand" href="#top"><img src="assets/img/icon.png" alt="" width="32" height="32"><span>Traffic Engine</span></a>
+		<nav class="nav-links" aria-label="Sections">
+			<a href="#roads">OpenStreetMap</a>
+			<a href="#junctions">Junctions</a>
+			<a href="#congestion">Congestion</a>
+			<a href="#api">API</a>
+			<a href="#build">Build</a>
+		</nav>
+		<a class="btn btn-small" data-github href="#build">GitHub</a>
+	</div>
+</header>
+
+<main id="main">
+
+<section class="hero" id="top">
+	<div class="wrap">
+		<div class="hero-text">
+			<p class="eyebrow"><span class="lamp lamp-red"></span><span class="lamp lamp-amber"></span><span class="lamp lamp-green"></span>Traffic simulation for Windows</p>
+			<h1>Simulate the traffic on the roads of your city.</h1>
+			<p class="lead">Traffic Engine imports the roads of an area from OpenStreetMap. It simulates each vehicle, traffic light and pedestrian. It shows the junctions with congestion and tells you why the vehicles wait.</p>
+			<p class="lead lead-strong">Test a change in the simulation before you make it on the road.</p>
+			<div class="cta">
+				<a class="btn" data-github href="#build">Get the source code</a>
+				<a class="btn btn-ghost" href="#roads">See the functions</a>
+			</div>
+		</div>
+		<div class="road" aria-hidden="true">
+			<span class="car car-1"></span><span class="car car-2"></span><span class="car car-3"></span><span class="car car-4"></span>
+		</div>
+		<figure class="shot hero-shot">
+			<img src="assets/img/hero.webp" width="1600" height="900" alt="The main window of Traffic Engine. The roads of Kızılay, Ankara, are on the map. Colors show the traffic density on each road.">
+		</figure>
+	</div>
+</section>
+
+<section class="facts" aria-label="Facts">
+	<ul class="wrap fact-grid">
+		<li><strong>OpenStreetMap</strong><span>Import with a live map</span></li>
+		<li><strong>LOS A&ndash;F</strong><span>For each junction (HCM 2010)</span></li>
+		<li><strong>186 signs</strong><span>Turkish traffic signs with official codes</span></li>
+		<li><strong>HTTP + JSON</strong><span>API for other programs</span></li>
+	</ul>
+</section>
+
+<section class="feature" id="roads">
+	<div class="wrap feature-grid">
+		<div class="feature-text">
+			<p class="kicker">Import</p>
+			<h2>The roads of your city from OpenStreetMap</h2>
+			<p>Draw the area on a live map, or find a place with its name. Traffic Engine downloads the data from the Overpass API and makes the road network.</p>
+			<ul class="ticks">
+				<li>Lanes, junctions, traffic lights, stop signs and give way signs</li>
+				<li>Bus stops, crosswalks, level crossings, bridges and tunnels</li>
+				<li>Dual carriageways become two-way roads with a median</li>
+				<li>The map tiles show below the roads</li>
+				<li>You can also open an .osm file</li>
+			</ul>
+		</div>
+		<div class="feature-media">
+			<figure class="shot">
+				<img src="assets/img/osm-import.webp" width="1180" height="760" loading="lazy" alt="The import dialog. A blue frame on the map shows the area of the import, 767 by 767 meters.">
+				<figcaption>Select the area on the live map. Move it or change its size with the mouse.</figcaption>
+			</figure>
+		</div>
+	</div>
+	<div class="wrap">
+		<figure class="shot shot-wide">
+			<img src="assets/img/real-roads.gif" width="1120" height="630" loading="lazy" alt="Animation: vehicles move through the main junction of Kızılay. Queues stop at the red lights.">
+			<figcaption>Kızılay, Ankara. The traffic lights control the queues at the main junction.</figcaption>
+		</figure>
+	</div>
+</section>
+
+<section class="feature feature-alt" id="junctions">
+	<div class="wrap feature-grid flip">
+		<div class="feature-text">
+			<p class="kicker">Simulation</p>
+			<h2>Traffic rules at each junction</h2>
+			<p>Each vehicle follows the vehicle in front of it (Intelligent Driver Model) and changes lanes when necessary. A vehicle enters a junction only if its path is clear and the exit has space for it. Thus, the vehicles do not block the junction.</p>
+			<ul class="ticks">
+				<li>Traffic lights with fixed times, actuated control or external control</li>
+				<li>Priority roads, stop signs, give way signs and lane rules</li>
+				<li>Pedestrians on the crosswalks, buses at the stops, motorcycles</li>
+				<li>A fuel and CO<sub>2</sub> model for each type of vehicle</li>
+				<li>Gridlock rule: a blocked network does not stop for ever</li>
+			</ul>
+		</div>
+		<div class="feature-media">
+			<figure class="shot">
+				<img src="assets/img/junction.gif" width="800" height="450" loading="lazy" alt="Animation: a junction with traffic lights. Cars and buses wait at the red light and start at the green light.">
+				<figcaption>A junction with traffic lights. The numbers show the time to the next change of the light.</figcaption>
+			</figure>
+		</div>
+	</div>
+</section>
+
+<section class="feature" id="congestion">
+	<div class="wrap">
+		<div class="feature-text feature-text-wide">
+			<p class="kicker">Analysis</p>
+			<h2>Find the congestion</h2>
+			<p>The congestion analysis shows where the traffic stops. For each junction, it calculates the delay per vehicle and the level of service (LOS A to F). The limits come from the Highway Capacity Manual 2010.</p>
+		</div>
+		<figure class="shot shot-wide">
+			<img src="assets/img/congestion.gif" width="1120" height="403" loading="lazy" alt="Animation: Kızılay at 200 percent traffic density. Red queue bands become longer. Labels show LOS F and spillback at the junctions.">
+			<figcaption>Kızılay at 200 % traffic density. The queues become longer. The labels show the junctions with LOS F.</figcaption>
+		</figure>
+		<div class="feature-grid">
+			<div class="feature-text">
+				<ul class="ticks">
+					<li>Queue bands and LOS circles on the map, labels at the hotspots</li>
+					<li>A list of the junctions, the worst junction first</li>
+					<li>Delay, flow, queue length, spillback and the main cause of the waits</li>
+					<li>Click a junction in the list: the view goes to the junction</li>
+					<li>Export the list as a CSV file, or read it through the API</li>
+				</ul>
+				<div class="los" aria-label="Levels of service">
+					<span class="los-a">A</span><span class="los-b">B</span><span class="los-c">C</span><span class="los-d">D</span><span class="los-e">E</span><span class="los-f">F</span>
+				</div>
+			</div>
+			<div class="feature-media">
+				<figure class="shot">
+					<img src="assets/img/congestion-panel.webp" width="1600" height="900" loading="lazy" alt="The Congestion panel below the map. A table shows the junctions with LOS F, the delay, the queue, the flow and the main cause.">
+					<figcaption>The Congestion panel: the worst junctions first, with the cause of the waits.</figcaption>
+				</figure>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="feature feature-alt" id="why">
+	<div class="wrap feature-grid">
+		<div class="feature-text">
+			<p class="kicker">Diagnosis</p>
+			<h2>Know why a vehicle waits</h2>
+			<p>Select a vehicle. The State line tells why it waits: a red light, a vehicle with priority, a full exit, pedestrians or a closed lane.</p>
+			<p>The text has a link to the cause. Click the link: the view goes to that vehicle, traffic light, sign or object.</p>
+		</div>
+		<div class="feature-media">
+			<figure class="shot">
+				<img src="assets/img/wait-reason-en.webp" width="1040" height="645" loading="lazy" alt="A selected car at a junction. The property panel shows: State: Waits for the green light (traffic light 18).">
+				<figcaption>The selected car waits for the green light of traffic light 18.</figcaption>
+			</figure>
+		</div>
+	</div>
+</section>
+
+<section class="feature" id="edit">
+	<div class="wrap feature-grid flip">
+		<div class="feature-text">
+			<p class="kicker">Editor</p>
+			<h2>Draw and change the network</h2>
+			<p>Draw roads and junctions with the mouse. Put traffic lights, signs, cones, barriers and bus stops on the roads. The property panel shows the values of the selected element. You can change them during the simulation.</p>
+			<ul class="ticks">
+				<li>186 Turkish traffic signs with their official codes</li>
+				<li>Bridges and tunnels with their own tools: ramps, portals and decks show on the map</li>
+				<li>Traffic light programs: phases, green times, all-red times and coordination</li>
+				<li>Workspaces in .te files (XML), more workspaces in tabs</li>
+			</ul>
+		</div>
+		<div class="feature-media stack">
+			<figure class="shot">
+				<img src="assets/img/signs.webp" width="1200" height="616" loading="lazy" alt="Warning signs and other traffic signs with their codes, for example T-1a and T-22a.">
+				<figcaption>Some of the traffic signs in the catalog.</figcaption>
+			</figure>
+			<figure class="shot">
+				<img src="assets/img/light-program.webp" width="860" height="600" loading="lazy" alt="The traffic light program dialog with two phases and a bar of the cycle.">
+				<figcaption>The traffic light program: phases and cycle.</figcaption>
+			</figure>
+		</div>
+	</div>
+</section>
+
+<section class="feature feature-alt" id="charts">
+	<div class="wrap">
+		<div class="feature-text feature-text-wide">
+			<p class="kicker">Statistics</p>
+			<h2>Measure the results</h2>
+			<p>The charts show the values of the simulation in time: vehicles, mean speed, waits at the junctions, stops, fuel and more. Compare the results before and after a change. Export the charts as PNG, SVG or CSV files.</p>
+		</div>
+		<figure class="shot shot-wide">
+			<img src="assets/img/charts.webp" width="1547" height="450" loading="lazy" alt="The Charts panel with the number of vehicles and the mean speed in time.">
+			<figcaption>The number of vehicles and the mean speed in the last hour.</figcaption>
+		</figure>
+	</div>
+</section>
+
+<section class="feature" id="api">
+	<div class="wrap feature-grid">
+		<div class="feature-text">
+			<p class="kicker">Integration</p>
+			<h2>Connect other programs</h2>
+			<p>The external API uses HTTP and JSON. Other programs can read the simulation state, the statistics, the vehicles and the congestion analysis.</p>
+			<p>An external traffic light controller can send the phases of the lights. The program can also export a full report in JSON format.</p>
+			<p><a class="link" data-github-path="docs/api.md" href="api.html">Read the API document</a></p>
+		</div>
+		<div class="feature-media">
+<pre class="code" aria-label="Example of an API request and its answer"><code><span class="c-prompt">$</span> curl http://127.0.0.1:8088/api/v1/workspaces/current/congestion
+{
+  <span class="c-key">"ok"</span>: true, <span class="c-key">"clock"</span>: <span class="c-str">"08:20:00"</span>, <span class="c-key">"window_s"</span>: 300,
+  <span class="c-key">"junctions"</span>: [
+    {
+      <span class="c-key">"node"</span>: 3, <span class="c-key">"signalized"</span>: true, <span class="c-key">"los"</span>: <span class="c-str">"E"</span>,
+      <span class="c-key">"delay_s"</span>: 66.6, <span class="c-key">"flow_veh_h"</span>: 1284,
+      <span class="c-key">"queue_m"</span>: 148.5, <span class="c-key">"waiting"</span>: 65,
+      <span class="c-key">"spillback"</span>: false,
+      <span class="c-key">"main_cause"</span>: <span class="c-str">"red_light"</span>, <span class="c-key">"main_cause_share"</span>: 0.64,
+      <span class="c-key">"approaches"</span>: [ ... ]
+    }
+  ]
+}</code></pre>
+		</div>
+	</div>
+</section>
+
+<section class="feature feature-alt" id="languages">
+	<div class="wrap feature-grid flip">
+		<div class="feature-text">
+			<p class="kicker">Languages</p>
+			<h2>English and Turkish</h2>
+			<p>The user interface is in English and in Turkish. Change the language with the button on the toolbar. You do not have to start the program again.</p>
+		</div>
+		<div class="feature-media">
+			<figure class="shot">
+				<img src="assets/img/wait-reason-tr.webp" width="1040" height="645" loading="lazy" alt="The same car in the Turkish user interface: Durum: Yeşil ışığı bekliyor (trafik ışığı 18).">
+				<figcaption>The same car in the Turkish user interface.</figcaption>
+			</figure>
+		</div>
+	</div>
+</section>
+
+<section class="feature" id="tests">
+	<div class="wrap">
+		<div class="feature-text feature-text-wide">
+			<p class="kicker">Quality</p>
+			<h2>Tested with long simulations</h2>
+			<p>The simulation test has no window. It simulates the traffic at the maximum speed and examines each step: vehicles that overlap, vehicles that do not move, loops of waits and errors in the reservations of the junctions.</p>
+		</div>
+		<ul class="stats">
+			<li><strong>15</strong><span>tests on 5 networks with 3 seeds</span></li>
+			<li><strong>30 h</strong><span>of simulated traffic</span></li>
+			<li><strong>74 000</strong><span>trips in less than 2 minutes</span></li>
+			<li><strong>0</strong><span>vehicles that stopped for 300 s or more</span></li>
+		</ul>
+	</div>
+</section>
+
+<section class="feature feature-alt" id="build">
+	<div class="wrap feature-grid">
+		<div class="feature-text">
+			<p class="kicker">Source code</p>
+			<h2>Build the program</h2>
+			<p>Requirements: Windows 10 or 11 (64-bit), Visual Studio 2022 with the C++ components and CMake.</p>
+			<ol class="steps">
+				<li>Start <code>build\setup_cots.bat</code>. It finds or downloads the third-party components: Qt 5.12, Xerces-C and Boost.</li>
+				<li>Start <code>build\build_Release_x64.bat</code>.</li>
+				<li>Start <code>bin\Release\traffic_engine.exe</code>.</li>
+			</ol>
+			<p class="cta"><a class="btn" data-github href="#build">Open the repository</a></p>
+		</div>
+		<div class="feature-media">
+			<figure class="shot shot-splash">
+				<img src="assets/img/splash.png" width="608" height="388" loading="lazy" alt="The start screen of Traffic Engine with a road, cars and a traffic light.">
+			</figure>
+		</div>
+	</div>
+</section>
+
+</main>
+
+<footer class="footer">
+	<div class="wrap footer-row">
+		<div class="brand brand-small"><img src="assets/img/icon.png" alt="" width="24" height="24"><span>Traffic Engine</span></div>
+		<p>Map data and map tiles in the images: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL).</p>
+		<p>Traffic Engine uses Qt, Xerces-C and Boost.</p>
+		<p>The texts of this site agree with ASD-STE100 Simplified Technical English.</p>
+	</div>
+</footer>
+</body>
+</html>
